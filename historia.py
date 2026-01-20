@@ -14,7 +14,7 @@ from PIL import Image
 from io import BytesIO
 
 # --- CONFIGURAÇÕES DO USUÁRIO ---
-NOME_USUARIO = "Ricardo"
+NOME_USUARIO = "Ricardo Rock"
 DESCRICAO_HISTORIA = "em que eu sou solicictado pelo presidente dos EUA Donald Trump para ajudar a resolver uma crise internacional de uma ameaça nuclear terrorista"
 UNIVERSO_HISTORIA = "Washington D.C - fotografia realistica"
 PASTA_FOTOS = "fotos"
