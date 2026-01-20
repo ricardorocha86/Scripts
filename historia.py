@@ -14,9 +14,9 @@ from PIL import Image
 from io import BytesIO
 
 # --- CONFIGURAÇÕES DO USUÁRIO ---
-NOME_USUARIO = "Amanda"
-DESCRICAO_HISTORIA = "Amanda liderando um aventura junto com Harry Potter e sua turma - e alguns dos iconicos personagens da saga. Retrate Amanda com cabelos curtos, logo acima dos ombros"
-UNIVERSO_HISTORIA = "Harry Potter - estilo estudios Ghibli"
+NOME_USUARIO = "Ricardo"
+DESCRICAO_HISTORIA = "em que eu sou solicictado pelo presidente dos EUA Donald Trump para ajudar a resolver uma crise internacional de uma ameaça nuclear terrorista"
+UNIVERSO_HISTORIA = "Washington D.C - fotografia realistica"
 PASTA_FOTOS = "fotos"
 # -------------------------------
 

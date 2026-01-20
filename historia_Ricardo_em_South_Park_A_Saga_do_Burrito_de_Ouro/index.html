@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ricardo em South Park: A Saga do Burrito de Ouro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #d35400; --bg: #0f0f0f; --paper: #f4ecd8; }
+        body { background: var(--bg); color: #333; font-family: 'Lora', serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-image: radial-gradient(circle at center, #1a1a1a 0%, #000 100%); }
+        .book { position: relative; width: 1000px; height: 650px; background: var(--paper); border-radius: 5px; box-shadow: 0 30px 60px rgba(0,0,0,0.8); display: flex; overflow: hidden; }
+        .page { position: absolute; width: 100%; height: 100%; display: none; grid-template-columns: 1fr 1fr; animation: fadeIn 0.8s ease; }
+        .page.active { display: grid; }
+        .left-side { padding: 4rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(0,0,0,0.1); }
+        .right-side { background: #000; overflow: hidden; }
+        .right-side img { width: 100%; height: 100%; object-fit: cover; }
+        .part-num { font-family: 'Cinzel', serif; color: var(--primary); margin-bottom: 1rem; font-weight: bold; }
+        .story-text { font-size: 1.1rem; line-height: 1.8; text-align: justify; }
+        .story-text::first-letter { font-size: 2.5rem; float: left; margin-right: 8px; color: var(--primary); font-family: 'Cinzel', serif; }
+        .image-prompt { font-size: 0.8rem; color: #777; margin-top: 1.5rem; font-style: italic; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 0.5rem; }
+        
+        /* Capa Especial */
+        .cover-page { grid-template-columns: 1fr !important; text-align: center; }
+        .cover-content { padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--paper); }
+        .cover-title { font-family: 'Cinzel', serif; font-size: 3.5rem; color: var(--primary); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 4px; }
+        .cover-img-container { width: 80%; height: 350px; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .cover-img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        .controls { margin-top: 2rem; display: flex; gap: 1rem; }
+        button { background: transparent; border: 2px solid var(--primary); color: white; padding: 0.8rem 2rem; cursor: pointer; border-radius: 30px; font-family: 'Cinzel'; }
+        button:hover:not(:disabled) { background: var(--primary); box-shadow: 0 0 15px var(--primary); }
+        button:disabled { opacity: 0.3; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <h1 style="color:white; font-family:'Cinzel';">Ricardo em South Park: A Saga do Burrito de Ouro</h1>
+    <div class="book">
+        <!-- Página de Capa -->
+        <div class="page active cover-page" id="p0">
+            <div class="cover-content">
+                <div class="cover-title">Ricardo em South Park: A Saga do Burrito de Ouro</div>
+                <div class="cover-img-container">
+                    <img src="web/capa.webp">
+                </div>
+                <div style="margin-top: 2rem; font-family: 'Cinzel'; font-size: 1.2rem; color: #555;">Protagonizado por Ricardo</div>
+            </div>
+        </div>
+
+        
+        <div class="page" id="p1">
+            <div class="left-side">
+                <div class="part-num">Capítulo 1</div>
+                <div class="story-text">Ricardo acabara de se mudar para a pacata e disfuncional South Park. Enquanto esperava o ônibus na neve, Cartman o encarou de cima a baixo e gritou: 'Quem é esse novo babaca? Ele tem cara de quem gosta de salada!'. Kyle tentou intervir, mas Ricardo apenas sorriu, percebendo que sua vida agora seria um completo absurdo.</div>
+                <div class="image-prompt"><b>Prompt:</b> South Park style animation, Ricardo standing at the snowy bus stop next to Cartman who is pointing and yelling, Stan and Kyle looking embarrassed, traditional 2D cutout art.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_1.webp"></div>
+        </div>
+        
+        <div class="page" id="p2">
+            <div class="left-side">
+                <div class="part-num">Capítulo 2</div>
+                <div class="story-text">Na escola, o caos começou quando o Diretor PC acusou Ricardo de não ter um 'privilégio de novato' adequado. Para provar seu valor, Ricardo foi desafiado por Cartman a comer o 'Burrito de Ouro' na lanchonete, um lanche tão picante que diziam ser capaz de abrir portais dimensionais nos fundos das calças de qualquer um.</div>
+                <div class="image-prompt"><b>Prompt:</b> South Park elementary cafeteria, Ricardo sitting at a table with a glowing spicy burrito, the four main kids watching in anticipation, PC Principal standing in the background, 2D animation style.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_2.webp"></div>
+        </div>
+        
+        <div class="page" id="p3">
+            <div class="left-side">
+                <div class="part-num">Capítulo 3</div>
+                <div class="story-text">Após a primeira mordida, o mundo ao redor de Ricardo começou a derreter. Ele e os meninos foram transportados para o porão de Butters, que agora era o Professor Chaos. 'Com o poder desse burrito, eu dominarei o estoque de papel higiênico da cidade!', vilanizou Butters, enquanto usava sua clássica armadura de papel alumínio.</div>
+                <div class="image-prompt"><b>Prompt:</b> Professor Chaos in his cardboard and foil lair, Ricardo and the boys looking confused, bright flashy colors in South Park art style, dramatic lighting.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_3.webp"></div>
+        </div>
+        
+        <div class="page" id="p4">
+            <div class="left-side">
+                <div class="part-num">Capítulo 4</div>
+                <div class="story-text">Ricardo, sentindo os efeitos explosivos do burrito, percebeu que seu 'gás' era sua maior arma. Ele lançou um ataque sônico que derrubou os lacaios de hamster do Professor Chaos. Stan gritou: 'Cara, o Ricardo é o herói que essa cidade merece, mas definitivamente não é o que a gente precisa agora!'.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo performing a comedic flatulence power move in a dark basement, green gas clouds in a cartoonish style, South Park characters reacting with disgust and awe.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_4.webp"></div>
+        </div>
+        
+        <div class="page" id="p5">
+            <div class="left-side">
+                <div class="part-num">Capítulo 5</div>
+                <div class="story-text">Com o Professor Chaos derrotado, tudo voltou ao normal no ponto de ônibus. Cartman deu um tapinha nas costas de Ricardo: 'Você é menos pior do que o Kyle'. De repente, um satélite desgovernado caiu do céu e esmagou Kenny. 'Meu Deus, mataram o Kenny!', gritou Stan. 'Seus filhos da mãe!', completou Kyle, enquanto Ricardo apenas suspirava.</div>
+                <div class="image-prompt"><b>Prompt:</b> The snowy bus stop at sunset, Ricardo and the boys standing together, a satellite has crushed Kenny leaving only his boots visible, South Park traditional animation style, final scene.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_5.webp"></div>
+        </div>
+        
+    </div>
+    <div class="controls">
+        <button id="btnP" onclick="cp(-1)" disabled>Anterior</button>
+        <button id="btnN" onclick="cp(1)">Próximo</button>
+    </div>
+    <script>
+        let p = 0;
+        let total = 5;
+        function cp(d) {
+            document.getElementById(`p${p}`).classList.remove('active');
+            p += d;
+            document.getElementById(`p${p}`).classList.add('active');
+            document.getElementById('btnP').disabled = p === 0;
+            document.getElementById('btnN').disabled = p === total;
+        }
+    </script>
+</body>
+</html>
+    
