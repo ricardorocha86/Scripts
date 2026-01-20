@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ricardo: O Desafiante do Destino vs Os Chapéus de Palha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #d35400; --bg: #0f0f0f; --paper: #f4ecd8; }
+        body { background: var(--bg); color: #333; font-family: 'Lora', serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-image: radial-gradient(circle at center, #1a1a1a 0%, #000 100%); }
+        .book { position: relative; width: 1000px; height: 650px; background: var(--paper); border-radius: 5px; box-shadow: 0 30px 60px rgba(0,0,0,0.8); display: flex; overflow: hidden; }
+        .page { position: absolute; width: 100%; height: 100%; display: none; grid-template-columns: 1fr 1fr; animation: fadeIn 0.8s ease; }
+        .page.active { display: grid; }
+        .left-side { padding: 4rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(0,0,0,0.1); }
+        .right-side { background: #000; overflow: hidden; }
+        .right-side img { width: 100%; height: 100%; object-fit: cover; }
+        .part-num { font-family: 'Cinzel', serif; color: var(--primary); margin-bottom: 1rem; font-weight: bold; }
+        .story-text { font-size: 1.1rem; line-height: 1.8; text-align: justify; }
+        .story-text::first-letter { font-size: 2.5rem; float: left; margin-right: 8px; color: var(--primary); font-family: 'Cinzel', serif; }
+        .image-prompt { font-size: 0.8rem; color: #777; margin-top: 1.5rem; font-style: italic; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 0.5rem; }
+        
+        /* Capa Especial */
+        .cover-page { grid-template-columns: 1fr !important; text-align: center; }
+        .cover-content { padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--paper); }
+        .cover-title { font-family: 'Cinzel', serif; font-size: 3.5rem; color: var(--primary); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 4px; }
+        .cover-img-container { width: 80%; height: 350px; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .cover-img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        .controls { margin-top: 2rem; display: flex; gap: 1rem; }
+        button { background: transparent; border: 2px solid var(--primary); color: white; padding: 0.8rem 2rem; cursor: pointer; border-radius: 30px; font-family: 'Cinzel'; }
+        button:hover:not(:disabled) { background: var(--primary); box-shadow: 0 0 15px var(--primary); }
+        button:disabled { opacity: 0.3; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <h1 style="color:white; font-family:'Cinzel';">Ricardo: O Desafiante do Destino vs Os Chapéus de Palha</h1>
+    <div class="book">
+        <!-- Página de Capa -->
+        <div class="page active cover-page" id="p0">
+            <div class="cover-content">
+                <div class="cover-title">Ricardo: O Desafiante do Destino vs Os Chapéus de Palha</div>
+                <div class="cover-img-container">
+                    <img src="web/capa.webp">
+                </div>
+                <div style="margin-top: 2rem; font-family: 'Cinzel'; font-size: 1.2rem; color: #555;">Protagonizado por Ricardo</div>
+            </div>
+        </div>
+
+        
+        <div class="page" id="p1">
+            <div class="left-side">
+                <div class="part-num">Capítulo 1</div>
+                <div class="story-text">Ricardo aguardava silencioso nas areias de uma ilha esquecida. Quando o Thousand Sunny ancorou, a pressão de seu Haki do Conquistador fez o mar recuar. Luffy saltou para a terra firme, sentindo que aquele homem era o maior obstáculo que já enfrentaram. 'Eu vim pelo topo', disse Ricardo, enquanto a tripulação se posicionava para o combate mais difícil de suas vidas.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo standing on a beach with a powerful aura, the Thousand Sunny ship in the background, Luffy and the Straw Hat crew preparing for battle, One Piece anime style, intense atmosphere.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_1.webp"></div>
+        </div>
+        
+        <div class="page" id="p2">
+            <div class="left-side">
+                <div class="part-num">Capítulo 2</div>
+                <div class="story-text">A batalha começou como um turbilhão. Nami disparou raios e Usopp cobriu o campo com armadilhas botânicas, mas Ricardo movia-se como um relâmpago entre os ataques. Ele nocauteou Brook com um toque sutil e neutralizou as mil mãos de Robin com um pulso de energia pura. Nem mesmo a armadura de Franky resistiu ao impacto devastador de um único soco de Ricardo.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo dodging lightning and plants, defeating Brook and Franky in a blur of motion, dynamic action shot, One Piece anime style, vibrant special effects.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_2.webp"></div>
+        </div>
+        
+        <div class="page" id="p3">
+            <div class="left-side">
+                <div class="part-num">Capítulo 3</div>
+                <div class="story-text">Zoro e Sanji atacaram em perfeita sincronia. As lâminas negras do caçador de piratas colidiram contra os braços endurecidos de Ricardo, criando faíscas que incendiavam a vegetação. Ao mesmo tempo, Ricardo bloqueou os chutes flamejantes de Sanji com os joelhos, sorrindo enquanto superava a velocidade do Ifrit Jambe. A dupla de elite dos Chapéus de Palha estava sendo empurrada ao seu limite.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo clashing with Zoro's three swords and Sanji's flaming kicks, sparks and black haki lightning everywhere, intense battle choreography, One Piece anime style.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_3.webp"></div>
+        </div>
+        
+        <div class="page" id="p4">
+            <div class="left-side">
+                <div class="part-num">Capítulo 4</div>
+                <div class="story-text">O céu se partiu quando Luffy ativou o Gear 5. O mundo tornou-se borracha e o riso do Deus do Sol ecoou. Ricardo, porém, não recuou; ele liberou sua técnica proibida, envolvendo seu corpo em uma aura de vácuo absoluto. Cada soco de Luffy que deveria ser cômico era recebido com uma contramedida brutal de Ricardo, transformando a ilha em um cenário de destruição total.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo fighting Luffy Gear 5 in his sun god form, white smoke clouds, distorted reality, massive energy waves, epic confrontation, One Piece anime style.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_4.webp"></div>
+        </div>
+        
+        <div class="page" id="p5">
+            <div class="left-side">
+                <div class="part-num">Capítulo 5</div>
+                <div class="story-text">No centro de uma cratera colossal, o confronto final aconteceu. Ricardo concentrou todo seu espírito em um golpe final contra o esforço combinado de Luffy e os sobreviventes da tripulação. Uma explosão de luz branca consumiu a visão de todos. Quando a fumaça se dissipou, Ricardo permanecia em pé, ferido mas invicto, tendo gravado seu nome na história como o homem que enfrentou sozinho uma lenda e prevaleceu.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo standing victorious in a smoking crater, clothes torn, Straw Hat crew defeated but alive in the background, sunset lighting, legendary warrior aesthetic, One Piece anime style.</div>
+            </div>
+            <div class="right-side"><img src="web/parte_5.webp"></div>
+        </div>
+        
+    </div>
+    <div class="controls">
+        <button id="btnP" onclick="cp(-1)" disabled>Anterior</button>
+        <button id="btnN" onclick="cp(1)">Próximo</button>
+    </div>
+    <script>
+        let p = 0;
+        let total = 5;
+        function cp(d) {
+            document.getElementById(`p${p}`).classList.remove('active');
+            p += d;
+            document.getElementById(`p${p}`).classList.add('active');
+            document.getElementById('btnP').disabled = p === 0;
+            document.getElementById('btnN').disabled = p === total;
+        }
+    </script>
+</body>
+</html>
+    

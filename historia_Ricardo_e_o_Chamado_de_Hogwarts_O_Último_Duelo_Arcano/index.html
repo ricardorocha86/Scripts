@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ricardo e o Chamado de Hogwarts: O Último Duelo Arcano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #d35400; --bg: #0f0f0f; --paper: #f4ecd8; }
+        body { background: var(--bg); color: #333; font-family: 'Lora', serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-image: radial-gradient(circle at center, #1a1a1a 0%, #000 100%); }
+        .book { position: relative; width: 1000px; height: 650px; background: var(--paper); border-radius: 5px; box-shadow: 0 30px 60px rgba(0,0,0,0.8); display: flex; overflow: hidden; }
+        .page { position: absolute; width: 100%; height: 100%; display: none; grid-template-columns: 1fr 1fr; animation: fadeIn 0.8s ease; }
+        .page.active { display: grid; }
+        .left-side { padding: 4rem; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(0,0,0,0.1); }
+        .right-side { background: #000; overflow: hidden; }
+        .right-side img { width: 100%; height: 100%; object-fit: cover; }
+        .part-num { font-family: 'Cinzel', serif; color: var(--primary); margin-bottom: 1rem; font-weight: bold; }
+        .story-text { font-size: 1.1rem; line-height: 1.8; text-align: justify; }
+        .story-text::first-letter { font-size: 2.5rem; float: left; margin-right: 8px; color: var(--primary); font-family: 'Cinzel', serif; }
+        .image-prompt { font-size: 0.8rem; color: #777; margin-top: 1.5rem; font-style: italic; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 0.5rem; }
+        
+        /* Capa Especial */
+        .cover-page { grid-template-columns: 1fr !important; text-align: center; }
+        .cover-content { padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--paper); }
+        .cover-title { font-family: 'Cinzel', serif; font-size: 3.5rem; color: var(--primary); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 4px; }
+        .cover-img-container { width: 80%; height: 350px; overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .cover-img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        .controls { margin-top: 2rem; display: flex; gap: 1rem; }
+        button { background: transparent; border: 2px solid var(--primary); color: white; padding: 0.8rem 2rem; cursor: pointer; border-radius: 30px; font-family: 'Cinzel'; }
+        button:hover:not(:disabled) { background: var(--primary); box-shadow: 0 0 15px var(--primary); }
+        button:disabled { opacity: 0.3; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <h1 style="color:white; font-family:'Cinzel';">Ricardo e o Chamado de Hogwarts: O Último Duelo Arcano</h1>
+    <div class="book">
+        <!-- Página de Capa -->
+        <div class="page active cover-page" id="p0">
+            <div class="cover-content">
+                <div class="cover-title">Ricardo e o Chamado de Hogwarts: O Último Duelo Arcano</div>
+                <div class="cover-img-container">
+                    <img src="capa.png">
+                </div>
+                <div style="margin-top: 2rem; font-family: 'Cinzel'; font-size: 1.2rem; color: #555;">Protagonizado por Ricardo</div>
+            </div>
+        </div>
+
+        
+        <div class="page" id="p1">
+            <div class="left-side">
+                <div class="part-num">Capítulo 1</div>
+                <div class="story-text">Ricardo surge nos portões de Hogwarts no auge da invasão. O céu está pesado com nuvens de fumaça, mas Harry Potter o reconhece imediatamente como o aliado lendário de que precisavam. Juntos, eles formam a linha de frente contra as sombras que avançam.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo, Harry, Ron, and Hermione standing at the Hogwarts entrance, magical barriers shimmering in the air, Studio Ghibli style, soft brush strokes, dramatic atmosphere.</div>
+            </div>
+            <div class="right-side"><img src="parte_1.png"></div>
+        </div>
+        
+        <div class="page" id="p2">
+            <div class="left-side">
+                <div class="part-num">Capítulo 2</div>
+                <div class="story-text">Enquanto os Comensais da Morte rompem as defesas, Ricardo demonstra uma magia ancestral única. Ele não usa apenas uma varinha, mas canaliza a energia da própria terra, criando ondas de luz dourada que desarmam os atacantes e protegem os estudantes feridos.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo casting a powerful golden energy spell from his hands, protecting Hogwarts students, Death Eaters retreating in the background, Studio Ghibli style, vibrant magical effects.</div>
+            </div>
+            <div class="right-side"><img src="parte_2.png"></div>
+        </div>
+        
+        <div class="page" id="p3">
+            <div class="left-side">
+                <div class="part-num">Capítulo 3</div>
+                <div class="story-text">No pátio central, o frio dos Dementadores toma conta. Ricardo fecha os olhos e evoca sua memória mais feliz, um brilho intenso que se funde ao cervo de prata de Harry, criando um escudo impenetrável que ilumina a escuridão absoluta.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo and Harry Potter casting Patronus charms together, a massive wave of silver light pushing back dark Dementors, Studio Ghibli art style, ethereal and emotional.</div>
+            </div>
+            <div class="right-side"><img src="parte_3.png"></div>
+        </div>
+        
+        <div class="page" id="p4">
+            <div class="left-side">
+                <div class="part-num">Capítulo 4</div>
+                <div class="story-text">O confronto final acontece nas ruínas do Grande Salão. Ricardo enfrenta Voldemort face a face, servindo como o pilar de força para Harry. Em um esforço conjunto, a determinação de Ricardo neutraliza as maldições, permitindo que a justiça prevaleça.</div>
+                <div class="image-prompt"><b>Prompt:</b> Epic final confrontation between Ricardo, Harry, and Voldemort in the ruined Great Hall, magical beams clashing, debris floating, Studio Ghibli style, cinematic composition.</div>
+            </div>
+            <div class="right-side"><img src="parte_4.png"></div>
+        </div>
+        
+        <div class="page" id="p5">
+            <div class="left-side">
+                <div class="part-num">Capítulo 5</div>
+                <div class="story-text">Com a derrota do Lorde das Trevas, o silêncio cai sobre Hogwarts. O sol nasce entre as montanhas, tingindo as ruínas de rosa e ouro. Ricardo, Harry, Rony e Hermione observam o horizonte, celebrando a paz conquistada pela coragem de uma nova amizade.</div>
+                <div class="image-prompt"><b>Prompt:</b> Ricardo and the trio sitting on a stone wall watching the sunrise over the peaceful ruins of Hogwarts, soft morning light, Studio Ghibli style, heartwarming and hopeful.</div>
+            </div>
+            <div class="right-side"><img src="parte_5.png"></div>
+        </div>
+        
+    </div>
+    <div class="controls">
+        <button id="btnP" onclick="cp(-1)" disabled>Anterior</button>
+        <button id="btnN" onclick="cp(1)">Próximo</button>
+    </div>
+    <script>
+        let p = 0;
+        let total = 5;
+        function cp(d) {
+            document.getElementById(`p${p}`).classList.remove('active');
+            p += d;
+            document.getElementById(`p${p}`).classList.add('active');
+            document.getElementById('btnP').disabled = p === 0;
+            document.getElementById('btnN').disabled = p === total;
+        }
+    </script>
+</body>
+</html>
+    
