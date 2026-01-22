@@ -1,0 +1,121 @@
+.character-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    border: 2px solid hsla(var(--primary-hue), 30%, 40%, 0.2);
+    backdrop-filter: blur(20px);
+    transition: all var(--transition-normal);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.character-card:hover {
+    transform: translateY(-4px);
+    border-color: hsla(var(--primary-hue), 50%, 50%, 0.4);
+    box-shadow: var(--shadow-lg);
+}
+
+.character-card.selectable {
+    cursor: pointer;
+}
+
+.character-card.selected {
+    border-color: var(--accent-gold);
+    box-shadow: var(--shadow-glow-gold);
+    background: hsla(42, 50%, 20%, 0.3);
+}
+
+.character-images {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-image-thumb {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-md);
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow-md);
+    border: 3px solid white;
+    transition: transform var(--transition-normal);
+}
+
+.character-card:hover .character-image-thumb:nth-child(1) {
+    transform: rotate(-15deg) translateX(-10px) !important;
+}
+
+.character-card:hover .character-image-thumb:nth-child(2) {
+    transform: rotate(0deg) scale(1.05) !important;
+}
+
+.character-card:hover .character-image-thumb:nth-child(3) {
+    transform: rotate(15deg) translateX(10px) !important;
+}
+
+.character-info {
+    text-align: center;
+}
+
+.character-name {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.character-photos-count {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.character-selected-badge {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 32px;
+    height: 32px;
+    background: var(--gradient-gold);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: hsl(30, 50%, 15%);
+    animation: scaleIn 0.3s var(--transition-bounce);
+}
+
+.character-delete-btn {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    border: none;
+    background: hsla(0, 70%, 50%, 0.8);
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-card:hover .character-delete-btn {
+    opacity: 1;
+}
+
+.character-delete-btn:hover {
+    background: hsl(0, 70%, 45%);
+    transform: scale(1.1);
+}
