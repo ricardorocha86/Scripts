@@ -1,0 +1,50 @@
+{
+  "id": "20260123_172124_699ecec3",
+  "folder": "20260123_172124_699ecec3_Ricardo_e_Amanda_Os_Aprendizes_Mais_Desastrados_da",
+  "createdAt": "2026-01-23T17:23:35.074428",
+  "title": "Ricardo e Amanda: Os Aprendizes Mais Desastrados da Galáxia",
+  "cover_prompt": "Cinematic wide 16:9 shot of Master Yoda standing between a clumsy Ricardo and a confused Amanda on the swampy planet Dagobah, Ricardo holding a lightsaber upside down, Amanda tangled in glowing swamp vines, misty atmosphere, Star Wars aesthetic, hyper-realistic, 8k.",
+  "parts": [
+    [
+      "Ricardo e Amanda desembarcaram em Dagobah com o peito estufado de coragem, prontos para se tornarem Jedis. No entanto, ao tentar fazer uma entrada triunfal saindo da nave, Ricardo tropeçou em uma raiz retorcida e caiu de cara na lama, enquanto Amanda, tentando ajudá-lo, acabou prendendo sua capa em um galho, ficando pendurada como um casulo humano sob o olhar julgador do Mestre Yoda.",
+      "Master Yoda standing in the foreground looking disappointed while Ricardo is face-down in the mud and Amanda is hanging from a tree branch by her Jedi cloak, misty swamp background, cinematic lighting."
+    ],
+    [
+      "A primeira lição era sobre concentração e levitação. Yoda pediu que movessem pequenas pedras com a mente. Ricardo fechou os olhos com tanta força que seu rosto ficou roxo, mas em vez de levitar a pedra, ele acabou soltando um pum estrondoso que ecoou pelo pântano. O susto foi tanto que Amanda perdeu o foco e deixou a pedra dela cair direto no dedão do pé de Yoda, que soltou um resmungo em uma língua desconhecida.",
+      "Ricardo with a very strained purple face, Amanda looking horrified as a small rock hits Master Yoda's foot, cinematic close-up, Dagobah environment."
+    ],
+    [
+      "Chegou a hora do treinamento com o sabre de luz. Yoda entregou as armas, mas Amanda, ao tentar ligar o seu, apertou o botão errado e o sabre disparou para trás, cortando metade da horta de cogumelos espaciais de Yoda. Ricardo, tentando mostrar técnica, começou a girar o sabre como um moinho, mas acabou se enrolando tanto que desmaiou após acertar o próprio cabo na testa, caindo por cima da pilha de lenha do mestre.",
+      "Amanda holding a glowing blue lightsaber that is cutting through giant swamp mushrooms, Ricardo lying on the ground with a bump on his head, Yoda facepalming, Star Wars visual style."
+    ],
+    [
+      "Yoda decidiu testar a telepatia. 'Sintam o que eu sinto', disse ele. Ricardo, tentando se conectar profundamente, acabou confundindo a fome de Yoda com a sua própria e começou a comer as rações de emergência que estavam na mochila de Amanda. Enquanto isso, Amanda tentou usar a Força para trazer um lanche, mas acabou atraindo um monstro do pântano curioso que começou a lamber a careca de Ricardo, achando que era um ovo gigante.",
+      "A swamp creature licking Ricardo's head while he eats a space ration bar, Amanda looking surprised, Yoda meditating in the background trying to ignore them, cinematic wide shot."
+    ],
+    [
+      "Exausto e com a paciência por um fio de cabelo, Yoda decidiu que o treinamento estava encerrado por 'motivos de segurança galáctica'. Ele entregou a Ricardo e Amanda um mapa holográfico, dizendo ser um segredo Jedi antigo. Quando abriram no espaço, descobriram que era apenas o endereço de uma lanchonete em Coruscant com o aviso: 'Melhor comer do que lutar, vocês devem'. A dupla partiu, feliz por terem sobrevivido ao mestre.",
+      "Ricardo and Amanda inside a spaceship cockpit looking at a blue hologram of a burger and fries, smiling and covered in mud, stars visible through the window, cinematic Star Wars interior."
+    ]
+  ],
+  "images": {
+    "parte_5": "/historias/20260123_172124_699ecec3_Ricardo_e_Amanda_Os_Aprendizes_Mais_Desastrados_da/parte_5.png",
+    "capa": "/historias/20260123_172124_699ecec3_Ricardo_e_Amanda_Os_Aprendizes_Mais_Desastrados_da/capa.png",
+    "parte_2": "/historias/20260123_172124_699ecec3_Ricardo_e_Amanda_Os_Aprendizes_Mais_Desastrados_da/parte_2.png"
+  },
+  "universe": {
+    "id": "star-wars",
+    "name": "Star Wars",
+    "style": "universo Star Wars, Jedis, sabres de luz, naves espaciais"
+  },
+  "characters": [
+    {
+      "id": "1769199221471",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1769199208155",
+      "name": "Amanda"
+    }
+  ],
+  "totalTime": 163.4
+}

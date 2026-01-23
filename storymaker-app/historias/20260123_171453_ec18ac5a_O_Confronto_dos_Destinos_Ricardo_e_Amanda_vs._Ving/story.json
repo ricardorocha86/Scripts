@@ -1,0 +1,49 @@
+{
+  "id": "20260123_171453_ec18ac5a",
+  "folder": "20260123_171453_ec18ac5a_O_Confronto_dos_Destinos_Ricardo_e_Amanda_vs._Ving",
+  "createdAt": "2026-01-23T17:17:21.617473",
+  "title": "O Confronto dos Destinos: Ricardo e Amanda vs. Vingadores",
+  "cover_prompt": "Cinematic wide 16:9 shot, movie poster style. Ricardo and Amanda standing back-to-back in a destroyed New York street at twilight. On one side, Iron Man hovering with glowing repulsors. On the other, Spider-Man perched on a ruined taxi. High contrast, lens flare, hyper-realistic, Marvel MCU aesthetic.",
+  "parts": [
+    [
+      "O ar estava carregado de eletricidade quando Ricardo e Amanda invadiram o complexo da Stark Industries. Subitamente, o sensor aranha de Peter Parker disparou e o Homem de Ferro desceu dos céus com um estrondo metálico. 'Vocês escolheram o dia errado para causar problemas', avisou Stark, enquanto seus repulsores brilhavam em um azul intimidador.",
+      "Cinematic shot of a Stark Industries high-tech hangar. Ricardo and Amanda standing defiant in the center. Iron Man landing with sparks, Spider-Man hanging from a web above them. Dramatic blue and gold lighting."
+    ],
+    [
+      "A luta começou com a agilidade estonteante do Homem-Aranha. Teias voavam em todas as direções, mas Ricardo, com reflexos que desafiavam a lógica, esquivou-se de cada ataque e desferiu um contra-golpe poderoso que lançou o herói aracnídeo contra uma parede de titânio, deixando Peter momentaneamente atordoado.",
+      "Action scene. Ricardo punching Spider-Man in mid-air as a web snaps. High speed motion blur, debris flying everywhere, sparks from destroyed tech in the background."
+    ],
+    [
+      "Irritado, Stark disparou uma rajada total de seus repulsores. Amanda, no entanto, não recuou; ela ergueu as mãos, canalizando uma energia mística que formou um escudo impenetrável. O calor era insuportável, mas a vontade de Amanda era de ferro, refletindo o ataque de volta e forçando a armadura Mark 85 a recuar.",
+      "Amanda blocking a massive double repulsor blast from Iron Man with a glowing purple energy shield. Reflective surfaces, intense light, embers and smoke swirling around her."
+    ],
+    [
+      "Ricardo e Amanda uniram forças em uma manobra perfeitamente sincronizada. Enquanto Ricardo distraía Stark com ataques corpo a corpo brutais que amassavam a armadura, Amanda usou um pulso eletromagnético rúnico para desestabilizar os sistemas de voo de Tony, fazendo o bilionário colidir contra o solo sob o peso da própria tecnologia.",
+      "Ricardo grappling with Iron Man while Amanda casts a disruptive spell. The Iron Man suit is flickering and sparking. Intense battlefield atmosphere, cinematic low angle shot."
+    ],
+    [
+      "Com o Homem-Aranha imobilizado e a armadura de Stark desativada, o silêncio finalmente caiu sobre o campo de batalha. Ricardo e Amanda observaram os heróis caídos, provando que nem mesmo os Vingadores eram páreos para sua determinação. O sol nasceu no horizonte, iluminando a vitória épica da dupla sobre as lendas da Marvel.",
+      "Ricardo and Amanda standing victorious in the center of the ruins. Iron Man kneeling with his helmet off, looking defeated. Spider-Man trapped in energy bonds. Golden hour cinematic lighting, epic ending scene."
+    ]
+  ],
+  "images": {
+    "parte_3": "/historias/20260123_171453_ec18ac5a_O_Confronto_dos_Destinos_Ricardo_e_Amanda_vs._Ving/parte_3.png",
+    "parte_5": "/historias/20260123_171453_ec18ac5a_O_Confronto_dos_Destinos_Ricardo_e_Amanda_vs._Ving/parte_5.png"
+  },
+  "universe": {
+    "id": "marvel",
+    "name": "Marvel",
+    "style": "universo cinematográfico Marvel, super-heróis, ação épica"
+  },
+  "characters": [
+    {
+      "id": "1769199221471",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1769199208155",
+      "name": "Amanda"
+    }
+  ],
+  "totalTime": 175.8
+}

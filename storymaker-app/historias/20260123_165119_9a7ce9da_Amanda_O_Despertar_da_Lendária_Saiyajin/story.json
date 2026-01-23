@@ -1,0 +1,49 @@
+{
+  "id": "20260123_165119_9a7ce9da",
+  "folder": "20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin",
+  "createdAt": "2026-01-23T16:51:48.573711",
+  "title": "Amanda: O Despertar da Lendária Saiyajin",
+  "cover_prompt": "Cinematic wide 16:9 shot of a powerful female Saiyan named Amanda with long black hair, wearing blue and gold battle armor, standing on a crystalline peak under a binary sun, a massive golden Ki aura erupting from her body, Dragon Ball Z artistic style, hyper-detailed, vibrant colors.",
+  "parts": [
+    [
+      "Em um planeta isolado nas fronteiras da galáxia, Amanda levava uma vida tranquila até que um antigo instinto despertou. Durante um treinamento solitário entre desfiladeiros, ela sentiu uma energia avassaladora percorrer suas veias, revelando sua herança de uma linhagem Saiyajin quase extinta.",
+      "Amanda in a desert canyon, wearing simple martial arts gi, concentrating with a faint blue Ki aura, dust swirling around her feet, Dragon Ball art style, cinematic lighting."
+    ],
+    [
+      "A paz foi quebrada quando batedores de um império tirânico detectaram seu poder. Amanda viu o céu escurecer com naves de guerra. Determinada a proteger seu novo lar, ela elevou seu Ki, fazendo o solo tremer e as pedras flutuarem ao seu redor enquanto se preparava para o combate.",
+      "Amanda looking up at a fleet of dark spherical spaceships in the sky, her aura intensifying, rocks levitating, determined facial expression, wide shot, Dragon Ball Z aesthetic."
+    ],
+    [
+      "O confronto foi brutal, e Amanda foi levada ao seu limite físico. No calor da batalha, a memória de seus antepassados e o desejo de justiça desencadearam uma fúria adormecida. Seus olhos brilharam em verde esmeralda e seu cabelo explodiu em um dourado radiante: a lendária Super Saiyajin havia despertado.",
+      "Amanda transforming into Super Saiyan, golden spiky hair, teal eyes, massive golden electric aura, muscles defined, background exploding with energy, high dynamic action."
+    ],
+    [
+      "Com seu novo poder, Amanda enfrentou o general da frota em um duelo que rasgou as nuvens. Movendo-se em velocidades imperceptíveis, ela concentrou toda a sua energia vital em um ataque final. Um feixe de luz azul e dourado disparou de suas mãos, obliterando a ameaça opressora.",
+      "Super Saiyan Amanda firing a massive dual-handed energy beam, colossal blue and white light blast, ground cracking under her feet, epic scale, intense visual effects."
+    ],
+    [
+      "Após a vitória, o silêncio retornou ao planeta. Amanda observou o horizonte, sabendo que seu destino agora pertencia às estrelas. Como a nova guardiã do universo, ela jurou que sua força seria sempre o escudo dos inocentes, tornando-se uma lenda viva entre os guerreiros.",
+      "Amanda in Super Saiyan form standing heroically on a cliff, golden hair flowing, looking at a beautiful sunset, vibrant sky, serene yet powerful atmosphere, Dragon Ball Super style."
+    ]
+  ],
+  "images": {
+    "capa": "/historias/20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin/capa.png",
+    "parte_1": "/historias/20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin/parte_1.png",
+    "parte_2": "/historias/20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin/parte_2.png",
+    "parte_3": "/historias/20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin/parte_3.png",
+    "parte_4": "/historias/20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin/parte_4.png",
+    "parte_5": "/historias/20260123_165119_9a7ce9da_Amanda_O_Despertar_da_Lendária_Saiyajin/parte_5.png"
+  },
+  "universe": {
+    "id": "dragon-ball",
+    "name": "Dragon Ball",
+    "style": "universo Dragon Ball, guerreiros Saiyajins, artes marciais, poderes ki"
+  },
+  "characters": [
+    {
+      "id": "1769197855213",
+      "name": "Amanda"
+    }
+  ],
+  "totalTime": 43.9
+}

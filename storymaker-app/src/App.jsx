@@ -249,6 +249,47 @@ function App() {
               </div>
             </section>
 
+            {/* My Stories Section */}
+            <section className="dashboard-section">
+              <div className="section-header">
+                <h2>📚 Minhas Histórias</h2>
+                <span className="badge badge-primary">{savedStories.length} criadas</span>
+              </div>
+
+              {savedStories.length === 0 ? (
+                <div className="empty-stories">
+                  <span className="empty-icon">📖</span>
+                  <h3>Nenhuma história ainda</h3>
+                  <p>Crie sua primeira história para vê-la aqui!</p>
+                </div>
+              ) : (
+                <div className="stories-grid">
+                  {savedStories.map(story => (
+                    <div
+                      key={story.id}
+                      className="story-card glow-border"
+                      onClick={() => handleViewSavedStory(story)}
+                    >
+                      <div className="story-card-cover">
+                        {story.images?.capa ? (
+                          <img src={story.images.capa.startsWith('http') ? story.images.capa : `http://localhost:8000${story.images.capa}`} alt={story.title} />
+                        ) : (
+                          <div className="story-card-placeholder">📚</div>
+                        )}
+                      </div>
+                      <div className="story-card-info">
+                        <h4>{story.title}</h4>
+                        <p className="story-card-universe">{typeof story.universe === 'string' ? story.universe : story.universe?.name}</p>
+                        <span className="story-card-date">
+                          {new Date(story.createdAt).toLocaleDateString('pt-BR')}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+
             {/* Characters Section */}
             <section className="dashboard-section">
               <div className="section-header">

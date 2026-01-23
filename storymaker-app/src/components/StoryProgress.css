@@ -241,8 +241,10 @@
     background: var(--bg-glass);
     border: 2px solid var(--primary);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: var(--space-xs);
 }
 
 .loading-spinner {
@@ -254,6 +256,19 @@
     animation: spin 0.8s linear infinite;
 }
 
+.loading-spinner.large {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+}
+
+.loading-time {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    animation: pulse 1s ease-in-out infinite;
+}
+
 .chapter-image-pending {
     background: var(--bg-glass);
     border: 2px dashed hsla(var(--primary-hue), 30%, 40%, 0.3);
@@ -261,6 +276,55 @@
     align-items: center;
     justify-content: center;
     opacity: 0.5;
+}
+
+.chapter-image-error {
+    background: hsla(0, 50%, 20%, 0.5);
+    border: 2px solid hsl(0, 70%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 70%, 60%);
+}
+
+/* Cover Error */
+.cover-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-3xl);
+    background: hsla(0, 50%, 20%, 0.3);
+    border: 2px solid hsl(0, 70%, 50%);
+    border-radius: var(--radius-md);
+    min-height: 200px;
+}
+
+.cover-error .error-icon {
+    font-size: 3rem;
+}
+
+.cover-error p {
+    color: hsl(0, 70%, 60%);
+    font-weight: 600;
+}
+
+/* Cover Loading */
+.cover-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-3xl);
+    background: var(--bg-glass);
+    border-radius: var(--radius-md);
+    min-height: 200px;
+}
+
+.cover-loading .loading-time {
+    font-size: 1.25rem;
 }
 
 /* Cover Preview */
@@ -351,10 +415,23 @@
 
 .error-message {
     color: hsl(0, 70%, 60%);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
     padding: var(--space-md);
     background: hsla(0, 70%, 50%, 0.1);
     border-radius: var(--radius-md);
+}
+
+.error-hint {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-xl);
+}
+
+.error-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Cancel Button */

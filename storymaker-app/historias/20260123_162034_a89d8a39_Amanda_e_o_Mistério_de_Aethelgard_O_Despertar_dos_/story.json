@@ -1,0 +1,49 @@
+{
+  "id": "20260123_162034_a89d8a39",
+  "folder": "20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_",
+  "createdAt": "2026-01-23T16:23:01.057011",
+  "title": "Amanda e o Mistério de Aethelgard: O Despertar dos Ventos",
+  "cover_prompt": "Cinematic wide shot 16:9, One Piece anime style, a young woman with long flowing hair named Amanda standing on the prow of a pirate ship, swirling wind currents around her, vibrant blue sky and a massive golden city floating in the distance among clouds, high detail, vibrant colors, epic composition.",
+  "parts": [
+    [
+      "Amanda observava o horizonte da Grand Line, sentindo a pressão do Novo Mundo. Como capitã dos Piratas do Vendaval, ela buscava a lendária ilha de Aethelgard. Com o poder de sua Akuma no Mi, a Kaze Kaze no Mi, ela controlava as correntes de ar para guiar seu navio através de ondas colossais e tempestades imprevisíveis.",
+      "Wide shot, One Piece anime style, Amanda standing on a wooden pirate ship deck, winds swirling around her hair and clothes, dark stormy clouds and huge turquoise waves in the background, cinematic lighting."
+    ],
+    [
+      "De repente, três navios da Marinha surgiram da névoa densa. O Vice-Almirante ordenou a rendição imediata, mas Amanda apenas sorriu desafiadoramente. Com um movimento rápido de mãos, ela gerou um tornado devastador que ergueu os navios inimigos como se fossem brinquedos, abrindo caminho para sua tripulação avançar.",
+      "Action scene, One Piece style, Amanda summoning a massive blue and white tornado from the sea, Marine battleships being lifted into the swirling air, sea spray and debris, intense perspective."
+    ],
+    [
+      "Após dias de navegação, o céu se abriu para revelar Aethelgard, uma ilha flutuante majestosa feita de mármore branco e detalhes em ouro puro. Amanda desembarcou, sentindo que os segredos do Século Perdido poderiam estar escondidos ali. A vegetação local era exuberante, com flores que brilhavam como joias sob o sol eterno da ilha.",
+      "Beautiful landscape, One Piece style, a floating island with white marble ruins and golden towers, Amanda walking through a forest of glowing tropical flowers and exotic trees, bright sunlight and lens flare."
+    ],
+    [
+      "No centro da ilha, um Guardião de Ferro ancestral despertou para proteger o tesouro. O gigante mecânico atacou com raios de energia, mas Amanda atingiu o despertar de sua fruta. O ar ao redor tornou-se sólido, criando lâminas de vácuo invisíveis que cortaram a armadura do guardião, revelando um núcleo de energia místico.",
+      "Epic battle, One Piece style, Amanda floating in mid-air surrounded by translucent cyan wind blades, fighting a giant ancient steampunk robot guardian, explosions of blue light and energy sparks, dynamic camera angle."
+    ],
+    [
+      "Com a vitória, Amanda encontrou um Poneglyph oculto que indicava o caminho para o Laugh Tale. Ela não buscava apenas ouro, mas a liberdade total. Ao retornar ao mar, sua recompensa subiu para bilhões, e o nome da Imperatriz dos Ventos ecoou por todo o mundo enquanto ela navegava rumo ao horizonte infinito.",
+      "Ending shot, One Piece style, Amanda on her ship prow, holding a worn-out map and smiling at the sunset, a new bounty poster with her face flying in the wind, heroic pose, warm golden lighting, peaceful sea."
+    ]
+  ],
+  "images": {
+    "capa": "/historias/20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_/capa.png",
+    "parte_1": "/historias/20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_/parte_1.png",
+    "parte_2": "/historias/20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_/parte_2.png",
+    "parte_3": "/historias/20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_/parte_3.png",
+    "parte_4": "/historias/20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_/parte_4.png",
+    "parte_5": "/historias/20260123_162034_a89d8a39_Amanda_e_o_Mistério_de_Aethelgard_O_Despertar_dos_/parte_5.png"
+  },
+  "universe": {
+    "id": "one-piece",
+    "name": "One Piece",
+    "style": "universo de One Piece, piratas, Grand Line, poderes de frutas do diabo"
+  },
+  "characters": [
+    {
+      "id": "1769196006257",
+      "name": "Amanda"
+    }
+  ],
+  "totalTime": 165.9
+}

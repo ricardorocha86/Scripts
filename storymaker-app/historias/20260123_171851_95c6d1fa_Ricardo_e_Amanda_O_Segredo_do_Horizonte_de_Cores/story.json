@@ -1,0 +1,53 @@
+{
+  "id": "20260123_171851_95c6d1fa",
+  "folder": "20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores",
+  "createdAt": "2026-01-23T17:19:28.242881",
+  "title": "Ricardo e Amanda: O Segredo do Horizonte de Cores",
+  "cover_prompt": "Disney Pixar style 3D animation, wide shot 16:9, Ricardo and Amanda standing on a floating island looking at a vibrant sunset over a magical kingdom, cinematic lighting, expressive faces, high resolution, colorful world.",
+  "parts": [
+    [
+      "Em um mundo onde as cores dependiam de grandes engrenagens mágicas, Ricardo e Amanda descobriram que o brilho do sol estava desaparecendo. Determinados a salvar sua vila, eles encontraram um antigo mapa escondido em uma oficina de brinquedos.",
+      "Pixar style animation, Ricardo and Amanda in a whimsical clockwork city with gears and colorful houses, vibrant textures, blue sky, 3D render, high detail."
+    ],
+    [
+      "Eles partiram em um balão caseiro movido a sonhos, cruzando o Mar de Nuvens para alcançar a lendária Ilha Flutuante de Cristal. Amanda pilotava com destreza enquanto Ricardo calibrava os instrumentos de navegação.",
+      "Pixar style, Ricardo and Amanda flying a colorful steampunk hot air balloon through soft white fluffy clouds, expressive joyful faces, 3D animation, cinematic lighting."
+    ],
+    [
+      "Ao chegarem à ilha, enfrentaram uma floresta de sombras sussurrantes. Amanda segurou firme sua bússola de luz enquanto Ricardo usava uma lanterna mágica para abrir caminho entre as árvores que mudavam de lugar.",
+      "Pixar style, a dramatic scene with Ricardo holding a glowing lantern on a dark forest path, Amanda looking brave with a golden compass, cinematic 3D lighting, mystical atmosphere."
+    ],
+    [
+      "No centro da ilha, encontraram a Grande Safira, o coração do mundo. Juntos, eles uniram suas mãos ao cristal frio, e a amizade deles liberou uma onda de energia que varreu toda a escuridão do horizonte.",
+      "Pixar style, Ricardo and Amanda touching a giant glowing sapphire crystal, magical energy waves, vibrant rainbow colors, 3D character design, emotional moment."
+    ],
+    [
+      "Com o mundo restaurado e mais vibrante do que nunca, Ricardo e Amanda voltaram para casa como heróis. Eles aprenderam que a maior magia de todas era a coragem de explorar o desconhecido lado a lado.",
+      "Pixar style, Ricardo and Amanda returning to their village, cheering crowd, beautiful sunset, warm lighting, emotional and happy ending, 3D animation, high resolution."
+    ]
+  ],
+  "images": {
+    "parte_1": "/historias/20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores/parte_1.png",
+    "capa": "/historias/20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores/capa.png",
+    "parte_3": "/historias/20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores/parte_3.png",
+    "parte_4": "/historias/20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores/parte_4.png",
+    "parte_2": "/historias/20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores/parte_2.png",
+    "parte_5": "/historias/20260123_171851_95c6d1fa_Ricardo_e_Amanda_O_Segredo_do_Horizonte_de_Cores/parte_5.png"
+  },
+  "universe": {
+    "id": "pixar",
+    "name": "Pixar",
+    "style": "estilo Pixar, animação 3D colorida, aventura emocionante"
+  },
+  "characters": [
+    {
+      "id": "1769199221471",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1769199208155",
+      "name": "Amanda"
+    }
+  ],
+  "totalTime": 59.3
+}

@@ -20,17 +20,34 @@ export default function StoryProgress({ storyRequest, onComplete, onCancel }) {
     const [currentImage, setCurrentImage] = useState(null);
     const [generatedImages, setGeneratedImages] = useState({});
     const [imageTimes, setImageTimes] = useState({});
+    const [imagesInProgress, setImagesInProgress] = useState({}); // {imageId: startTime}
+    const [imageElapsedTimes, setImageElapsedTimes] = useState({}); // contadores em tempo real
+    const [imageErrors, setImageErrors] = useState({}); // {imageId: errorMessage}
     const [error, setError] = useState(null);
     const [isComplete, setIsComplete] = useState(false);
 
     const startTimeRef = useRef(Date.now());
     const eventSourceRef = useRef(null);
     const timerRef = useRef(null);
+    const hasStartedRef = useRef(false); // Previne execução dupla (React StrictMode)
 
-    // Timer global
+    // Timer global + contadores individuais de imagens
     useEffect(() => {
         timerRef.current = setInterval(() => {
-            setElapsedTime(Math.floor((Date.now() - startTimeRef.current) / 1000));
+            const now = Date.now();
+            setElapsedTime(Math.floor((now - startTimeRef.current) / 1000));
+
+            // Atualizar contadores de cada imagem em progresso
+            setImagesInProgress(current => {
+                if (Object.keys(current).length > 0) {
+                    const newElapsed = {};
+                    Object.entries(current).forEach(([id, startTime]) => {
+                        newElapsed[id] = Math.floor((now - startTime) / 1000);
+                    });
+                    setImageElapsedTimes(newElapsed);
+                }
+                return current;
+            });
         }, 1000);
 
         return () => {
@@ -40,6 +57,13 @@ export default function StoryProgress({ storyRequest, onComplete, onCancel }) {
 
     // Conexão SSE
     useEffect(() => {
+        // Prevenir execução dupla causada pelo React StrictMode
+        if (hasStartedRef.current) {
+            console.log('⚠️ Requisição já iniciada, ignorando chamada duplicada');
+            return;
+        }
+        hasStartedRef.current = true;
+
         const startGeneration = async () => {
             try {
                 const response = await fetch('http://localhost:8000/api/create-story', {
@@ -118,6 +142,11 @@ export default function StoryProgress({ storyRequest, onComplete, onCancel }) {
                 break;
 
             case 'image_start':
+                // Registrar início de cada imagem (para geração paralela)
+                setImagesInProgress(prev => ({
+                    ...prev,
+                    [data.imageId]: Date.now()
+                }));
                 setCurrentImage({
                     id: data.imageId,
                     current: data.currentImage,
@@ -138,8 +167,28 @@ export default function StoryProgress({ storyRequest, onComplete, onCancel }) {
                     ...prev,
                     [data.imageId]: data.elapsed
                 }));
+                // Remover da lista de em progresso
+                setImagesInProgress(prev => {
+                    const updated = { ...prev };
+                    delete updated[data.imageId];
+                    return updated;
+                });
                 setProgress(data.progress);
                 setMessage(data.message);
+                break;
+
+            case 'image_error':
+                // Marcar imagem como erro
+                setImageErrors(prev => ({
+                    ...prev,
+                    [data.imageId]: data.error || 'Erro desconhecido'
+                }));
+                // Remover da lista de em progresso
+                setImagesInProgress(prev => {
+                    const updated = { ...prev };
+                    delete updated[data.imageId];
+                    return updated;
+                });
                 break;
 
             case 'complete':
@@ -176,9 +225,15 @@ export default function StoryProgress({ storyRequest, onComplete, onCancel }) {
                     <span className="error-icon">❌</span>
                     <h2>Ops! Algo deu errado</h2>
                     <p className="error-message">{error}</p>
-                    <button className="btn btn-primary" onClick={onCancel}>
-                        Voltar
-                    </button>
+                    <p className="error-hint">Por favor, tente novamente. Se o problema persistir, aguarde alguns minutos.</p>
+                    <div className="error-buttons">
+                        <button className="btn btn-primary" onClick={onCancel}>
+                            🔄 Tentar Novamente
+                        </button>
+                        <button className="btn btn-secondary" onClick={onCancel}>
+                            ← Voltar
+                        </button>
+                    </div>
                 </div>
             </div>
         );
@@ -233,35 +288,61 @@ export default function StoryProgress({ storyRequest, onComplete, onCancel }) {
                 <div className="story-preview animate-slide-up">
                     <h3 className="preview-title">📖 {storyData.title}</h3>
                     <div className="preview-chapters">
-                        {storyData.parts.map((part, idx) => (
-                            <div key={idx} className="preview-chapter">
-                                <span className="chapter-num">Cap. {idx + 1}</span>
-                                {generatedImages[`parte_${idx + 1}`] ? (
-                                    <div className="chapter-image-done">
-                                        <img src={generatedImages[`parte_${idx + 1}`]} alt={`Capítulo ${idx + 1}`} />
-                                        <span className="image-time">{imageTimes[`parte_${idx + 1}`]}s</span>
-                                    </div>
-                                ) : currentImage?.id === `parte_${idx + 1}` ? (
-                                    <div className="chapter-image-loading">
-                                        <div className="loading-spinner" />
-                                    </div>
-                                ) : (
-                                    <div className="chapter-image-pending">
-                                        <span>⏳</span>
-                                    </div>
-                                )}
-                            </div>
-                        ))}
+                        {storyData.parts.map((part, idx) => {
+                            const imageId = `parte_${idx + 1}`;
+                            const isInProgress = imagesInProgress[imageId] !== undefined;
+                            const isDone = generatedImages[imageId] !== undefined;
+                            const hasError = imageErrors[imageId] !== undefined;
+
+                            return (
+                                <div key={idx} className="preview-chapter">
+                                    <span className="chapter-num">Cap. {idx + 1}</span>
+                                    {isDone ? (
+                                        <div className="chapter-image-done">
+                                            <img src={generatedImages[imageId]} alt={`Capítulo ${idx + 1}`} />
+                                            <span className="image-time">{imageTimes[imageId]}s</span>
+                                        </div>
+                                    ) : hasError ? (
+                                        <div className="chapter-image-error">
+                                            <span>❌</span>
+                                        </div>
+                                    ) : isInProgress ? (
+                                        <div className="chapter-image-loading">
+                                            <div className="loading-spinner" />
+                                            <span className="loading-time">{imageElapsedTimes[imageId] || 0}s</span>
+                                        </div>
+                                    ) : (
+                                        <div className="chapter-image-pending">
+                                            <span>⏳</span>
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             )}
 
             {/* Cover Preview */}
-            {generatedImages.capa && (
+            {(generatedImages.capa || imagesInProgress.capa || imageErrors.capa) && (
                 <div className="cover-preview animate-scale-in">
                     <h4>🎬 Capa da História</h4>
-                    <img src={generatedImages.capa} alt="Capa" />
-                    {imageTimes.capa && <span className="image-time-badge">{imageTimes.capa}s</span>}
+                    {generatedImages.capa ? (
+                        <>
+                            <img src={generatedImages.capa} alt="Capa" />
+                            {imageTimes.capa && <span className="image-time-badge">{imageTimes.capa}s</span>}
+                        </>
+                    ) : imageErrors.capa ? (
+                        <div className="cover-error">
+                            <span className="error-icon">❌</span>
+                            <p>Erro ao gerar capa</p>
+                        </div>
+                    ) : (
+                        <div className="cover-loading">
+                            <div className="loading-spinner large" />
+                            <span className="loading-time">{imageElapsedTimes.capa || 0}s</span>
+                        </div>
+                    )}
                 </div>
             )}
 

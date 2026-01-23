@@ -74,6 +74,34 @@ class StoryRequest(BaseModel):
 
 # --- FUNÇÕES AUXILIARES ---
 
+# Configuração de retry
+MAX_RETRIES = 5
+BASE_DELAY = 1  # segundos
+MAX_DELAY = 5   # segundos
+
+async def retry_with_backoff(func, *args, operation_name="operação", **kwargs):
+    """
+    Executa uma função async com retry e backoff exponencial.
+    Tenta até MAX_RETRIES vezes, esperando de 1 a 5 segundos entre tentativas.
+    """
+    last_exception = None
+    
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            return await func(*args, **kwargs)
+        except Exception as e:
+            last_exception = e
+            if attempt < MAX_RETRIES:
+                # Backoff exponencial: 1s, 2s, 3s, 4s, 5s (limitado a MAX_DELAY)
+                delay = min(BASE_DELAY * attempt, MAX_DELAY)
+                print(f"⚠️ Tentativa {attempt}/{MAX_RETRIES} falhou para {operation_name}: {e}")
+                print(f"   Aguardando {delay}s antes da próxima tentativa...")
+                await asyncio.sleep(delay)
+            else:
+                print(f"❌ Falha definitiva após {MAX_RETRIES} tentativas para {operation_name}: {e}")
+    
+    raise last_exception
+
 def send_event(event_type: str, data: dict) -> str:
     """Formata evento SSE"""
     payload = json.dumps({"type": event_type, **data}, ensure_ascii=False)
@@ -103,8 +131,8 @@ def create_story_folder(title: str) -> tuple[str, str]:
     os.makedirs(folder_path, exist_ok=True)
     return folder_path, story_id, folder_name
 
-async def gerar_json_historia(characters: List[Character], universe: Universe, description: str):
-    """Gera a estrutura da história usando Gemini"""
+async def _gerar_json_historia_interno(characters: List[Character], universe: Universe, description: str):
+    """Função interna que gera a estrutura da história."""
     nomes = ", ".join([c.name for c in characters])
     
     prompt_historia = f"""
@@ -117,8 +145,8 @@ async def gerar_json_historia(characters: List[Character], universe: Universe, d
     Os protagonistas devem ser {nomes}.
     """
     
-    response = client.models.generate_content(
-        model="gemini-2.5-flash-preview-05-20",
+    response = await client.aio.models.generate_content(
+        model="gemini-3-flash-preview",
         contents=prompt_historia,
         config={
             "response_mime_type": "application/json",
@@ -131,6 +159,57 @@ async def gerar_json_historia(characters: List[Character], universe: Universe, d
     
     return Story.model_validate_json(response.text)
 
+async def gerar_json_historia(characters: List[Character], universe: Universe, description: str):
+    """Gera a estrutura da história usando Gemini com retry."""
+    return await retry_with_backoff(
+        _gerar_json_historia_interno,
+        characters, universe, description,
+        operation_name="geração de história"
+    )
+
+async def _gerar_imagem_interno(
+    id_imagem: str, 
+    prompt: str, 
+    fotos_personagens: List[Image.Image], 
+    nomes: str, 
+    universo: str,
+    pasta_destino: str,
+    ratio: str = "2:3"
+) -> str:
+    """Função interna que gera uma imagem. Levanta exceção se falhar."""
+    instrucao = f"\n\nIMPORTANTE: Os personagens principais desta imagem devem ser exatamente as mesmas pessoas que aparecem nas fotos anexadas ({nomes}). Mantenha as características faciais. Universo: {universo}."
+    prompt_final = prompt + instrucao
+    
+    response = await client.aio.models.generate_content(
+        model="gemini-3-pro-image-preview",
+        contents=[prompt_final] + fotos_personagens,
+        config=types.GenerateContentConfig(
+            response_modalities=['IMAGE'],
+            image_config=types.ImageConfig(aspect_ratio=ratio),
+        )
+    )
+
+    for part in response.parts:
+        if image := part.as_image():
+            # Salvar imagem em disco
+            filename = f"{id_imagem}.png"
+            filepath = os.path.join(pasta_destino, filename)
+            image.save(filepath)
+            
+            # Também criar versão WebP otimizada
+            webp_filename = f"{id_imagem}.webp"
+            webp_filepath = os.path.join(pasta_destino, webp_filename)
+            
+            # Otimizar para web
+            with Image.open(filepath) as img:
+                img.thumbnail((1200, 1200), Image.Resampling.LANCZOS)
+                img.save(webp_filepath, "WEBP", quality=85, optimize=True)
+            
+            print(f"✅ Imagem salva: {filepath}")
+            return filename
+    
+    raise ValueError(f"A resposta não continha uma imagem válida para {id_imagem}.")
+
 async def gerar_imagem_async(
     id_imagem: str, 
     prompt: str, 
@@ -140,50 +219,16 @@ async def gerar_imagem_async(
     pasta_destino: str,
     ratio: str = "2:3"
 ) -> Optional[str]:
-    """Gera uma imagem e salva em disco. Retorna o caminho relativo."""
-    instrucao = f"\n\nIMPORTANTE: Os personagens principais desta imagem devem ser exatamente as mesmas pessoas que aparecem nas fotos anexadas ({nomes}). Mantenha as características faciais. Universo: {universo}."
-    prompt_final = prompt + instrucao
-    
-    tentativas = 3
-    for i_tentativa in range(tentativas):
-        try:
-            response = await client.aio.models.generate_content(
-                model="gemini-2.0-flash-exp-image-generation",
-                contents=[prompt_final] + fotos_personagens,
-                config=types.GenerateContentConfig(
-                    response_modalities=['TEXT', 'IMAGE'],
-                    image_config=types.ImageConfig(aspect_ratio=ratio),
-                )
-            )
-
-            for part in response.parts:
-                if image := part.as_image():
-                    # Salvar imagem em disco
-                    filename = f"{id_imagem}.png"
-                    filepath = os.path.join(pasta_destino, filename)
-                    image.save(filepath)
-                    
-                    # Também criar versão WebP otimizada
-                    webp_filename = f"{id_imagem}.webp"
-                    webp_filepath = os.path.join(pasta_destino, webp_filename)
-                    
-                    # Otimizar para web
-                    with Image.open(filepath) as img:
-                        img.thumbnail((1200, 1200), Image.Resampling.LANCZOS)
-                        img.save(webp_filepath, "WEBP", quality=85, optimize=True)
-                    
-                    print(f"✅ Imagem salva: {filepath}")
-                    return filename
-            
-            raise ValueError("A resposta não continha uma imagem válida.")
-
-        except Exception as e:
-            print(f"⚠️ Tentativa {i_tentativa + 1}/{tentativas} falhou para {id_imagem}: {e}")
-            if i_tentativa < tentativas - 1:
-                await asyncio.sleep(3)
-            else:
-                print(f"❌ Falha definitiva na imagem {id_imagem}.")
-    return None
+    """Gera uma imagem com retry e backoff. Retorna None se falhar após todas as tentativas."""
+    try:
+        return await retry_with_backoff(
+            _gerar_imagem_interno,
+            id_imagem, prompt, fotos_personagens, nomes, universo, pasta_destino, ratio,
+            operation_name=f"imagem {id_imagem}"
+        )
+    except Exception as e:
+        print(f"❌ Falha definitiva na imagem {id_imagem} após {MAX_RETRIES} tentativas: {e}")
+        return None
 
 # --- ENDPOINTS ---
 
@@ -260,92 +305,134 @@ async def create_story(request: StoryRequest):
                 }
             })
             
-            # ========== ETAPA 3: GERANDO IMAGENS ==========
+            # ========== ETAPA 3: GERANDO IMAGENS EM PARALELO ==========
             total_images = 6  # 1 capa + 5 partes
-            images_generated = 0
             generated_images = {}
             
             yield send_event("stage", {
                 "stage": 3,
                 "title": "🎨 Gerando Imagens",
-                "message": f"Criando {total_images} ilustrações mágicas...",
+                "message": f"Criando {total_images} ilustrações em paralelo...",
                 "progress": 30
             })
             
-            # Gerar capa (16:9)
+            # Enviar eventos de início para TODAS as imagens
             yield send_event("image_start", {
                 "stage": 3,
                 "imageId": "capa",
-                "message": "Criando imagem de capa...",
+                "message": "Iniciando geração da capa...",
                 "currentImage": 1,
                 "totalImages": total_images
             })
             
-            img_start = time.time()
-            capa_filename = await gerar_imagem_async(
-                "capa",
-                story_data.cover_prompt,
-                todas_fotos,
-                nomes,
-                request.universe.style,
-                pasta_historia,
-                ratio="16:9"
-            )
-            img_time = time.time() - img_start
-            
-            if capa_filename:
-                images_generated += 1
-                image_url = f"/historias/{folder_name}/{capa_filename}"
-                generated_images["capa"] = image_url
-                yield send_event("image_done", {
-                    "stage": 3,
-                    "imageId": "capa",
-                    "message": "Capa criada!",
-                    "elapsed": round(img_time, 1),
-                    "imageUrl": image_url,
-                    "currentImage": 1,
-                    "totalImages": total_images,
-                    "progress": 30 + (images_generated / total_images * 60)
-                })
-            
-            # Gerar imagens das partes (2:3)
-            for i, (texto, prompt) in enumerate(story_data.parts, 1):
-                image_id = f"parte_{i}"
-                
+            for i in range(1, 6):
                 yield send_event("image_start", {
                     "stage": 3,
-                    "imageId": image_id,
-                    "message": f"Criando ilustração do capítulo {i}...",
+                    "imageId": f"parte_{i}",
+                    "message": f"Iniciando capítulo {i}...",
                     "currentImage": i + 1,
                     "totalImages": total_images
                 })
+            
+            # Usar Queue para receber resultados em tempo real
+            result_queue = asyncio.Queue()
+            img_start = time.time()
+            
+            async def gerar_e_notificar(id_img, prompt, ratio):
+                """Gera imagem e coloca resultado na queue"""
+                start = time.time()
+                try:
+                    filename = await gerar_imagem_async(
+                        id_img, prompt, todas_fotos, nomes,
+                        request.universe.style, pasta_historia, ratio=ratio
+                    )
+                    elapsed = time.time() - start
+                    await result_queue.put({
+                        "id": id_img, 
+                        "filename": filename, 
+                        "elapsed": round(elapsed, 1),
+                        "error": None
+                    })
+                except Exception as e:
+                    elapsed = time.time() - start
+                    await result_queue.put({
+                        "id": id_img, 
+                        "filename": None, 
+                        "elapsed": round(elapsed, 1),
+                        "error": str(e)
+                    })
+            
+            # Iniciar todas as tasks em paralelo (sem await)
+            tasks = []
+            tasks.append(asyncio.create_task(
+                gerar_e_notificar("capa", story_data.cover_prompt, "16:9")
+            ))
+            for i, (texto, prompt) in enumerate(story_data.parts, 1):
+                tasks.append(asyncio.create_task(
+                    gerar_e_notificar(f"parte_{i}", prompt, "2:3")
+                ))
+            
+            # Processar resultados conforme vão chegando (tempo real)
+            images_done = 0
+            images_failed = 0
+            
+            for _ in range(total_images):
+                # Aguarda próximo resultado (qualquer imagem que terminar)
+                result = await result_queue.get()
                 
-                img_start = time.time()
-                part_filename = await gerar_imagem_async(
-                    image_id,
-                    prompt,
-                    todas_fotos,
-                    nomes,
-                    request.universe.style,
-                    pasta_historia,
-                    ratio="2:3"
-                )
-                img_time = time.time() - img_start
-                
-                if part_filename:
-                    images_generated += 1
-                    image_url = f"/historias/{folder_name}/{part_filename}"
-                    generated_images[image_id] = image_url
+                if result["error"]:
+                    images_failed += 1
+                    print(f"❌ Erro em imagem {result['id']}: {result['error']}")
+                    # Enviar evento de erro para essa imagem específica
+                    yield send_event("image_error", {
+                        "stage": 3,
+                        "imageId": result["id"],
+                        "message": f"Falha ao gerar {result['id']}",
+                        "error": result["error"]
+                    })
+                    continue
+                    
+                if result["filename"]:
+                    images_done += 1
+                    image_url = f"/historias/{folder_name}/{result['filename']}"
+                    generated_images[result["id"]] = image_url
+                    
+                    # Determinar número do capítulo para mensagem
+                    if result["id"] == "capa":
+                        msg = "Capa criada!"
+                        current_num = 1
+                    else:
+                        cap_num = int(result["id"].split("_")[1])
+                        msg = f"Capítulo {cap_num} ilustrado!"
+                        current_num = cap_num + 1
+                    
+                    # ENVIAR EVENTO IMEDIATAMENTE (tempo real!)
                     yield send_event("image_done", {
                         "stage": 3,
-                        "imageId": image_id,
-                        "message": f"Capítulo {i} ilustrado!",
-                        "elapsed": round(img_time, 1),
+                        "imageId": result["id"],
+                        "message": msg,
+                        "elapsed": result["elapsed"],
                         "imageUrl": image_url,
-                        "currentImage": i + 1,
+                        "currentImage": current_num,
                         "totalImages": total_images,
-                        "progress": 30 + (images_generated / total_images * 60)
+                        "progress": 30 + ((images_done + images_failed) / total_images * 60)
                     })
+            
+            # Garantir que todas as tasks terminaram
+            await asyncio.gather(*tasks, return_exceptions=True)
+            
+            total_img_time = time.time() - img_start
+            print(f"⚡ Imagens: {images_done} ✓, {images_failed} ✗ em {total_img_time:.1f}s (paralelo)")
+            
+            # Verificar se houve falhas demais
+            if images_failed > 0 and images_done == 0:
+                yield send_event("error", {
+                    "stage": 3,
+                    "title": "❌ Erro na Geração",
+                    "message": f"Não foi possível gerar nenhuma imagem após {MAX_RETRIES} tentativas. Por favor, tente novamente.",
+                    "progress": 0
+                })
+                return
             
             # ========== ETAPA 4: SALVAR E FINALIZAR ==========
             total_time = time.time() - start_time

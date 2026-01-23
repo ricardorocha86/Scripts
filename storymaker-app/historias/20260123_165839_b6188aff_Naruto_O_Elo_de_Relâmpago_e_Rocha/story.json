@@ -1,0 +1,53 @@
+{
+  "id": "20260123_165839_b6188aff",
+  "folder": "20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha",
+  "createdAt": "2026-01-23T16:59:11.471686",
+  "title": "Naruto: O Elo de Relâmpago e Rocha",
+  "cover_prompt": "Cinematic wide 16:9 shot of Ricardo and Amanda standing back-to-back in traditional Konoha flak jackets, swirling blue and yellow chakra surrounding them, the Hokage Rock in the background under a dramatic stormy sky, hyper-realistic anime style, 8k resolution.",
+  "parts": [
+    [
+      "Ricardo e Amanda, ninjas de elite da Vila da Folha, foram convocados para investigar uma anomalia de chakra nas Ruínas do Redemoinho, onde o espaço-tempo parecia se rasgar.",
+      "Ricardo and Amanda in Konoha ninja gear standing at the edge of ancient ruins, a purple rift in the sky, cinematic lighting, anime art style."
+    ],
+    [
+      "De repente, um exército de sombras surgiu da fenda; Ricardo bateu as mãos no chão gritando 'Estilo Terra: Grande Muralha', erguendo defesas sólidas enquanto Amanda preparava seu contra-ataque.",
+      "Ricardo slamming his palms onto the ground, massive stone walls rising from the earth, Amanda standing behind him channeling electricity, dynamic action shot."
+    ],
+    [
+      "Amanda saltou sobre a muralha com uma velocidade cegante, suas mãos brilhando com o 'Estilo Raio: Lâmina do Trovão', cortando as hordas de sombras como um relâmpago azul no campo de batalha.",
+      "Amanda jumping through the air with glowing blue lightning in her hands, striking down dark shadow creatures, sparks and debris flying, intense expression."
+    ],
+    [
+      "O líder das sombras se revelou, mas Ricardo e Amanda uniram seus chakras em um jutsu combinado: uma tempestade de areia eletrificada que aprisionou o vilão em uma prisão de magnetismo absoluto.",
+      "Ricardo and Amanda holding hands to combine chakra, a massive vortex of sand and yellow lightning trapping a dark figure, epic scale, glowing effects."
+    ],
+    [
+      "Com a fenda selada e a paz restaurada, Ricardo e Amanda observaram o amanhecer sobre as ruínas, reafirmando seu laço como os protetores mais fortes da nova geração ninja.",
+      "Ricardo and Amanda standing side-by-side on a high cliff, looking at a golden sunrise over a lush landscape, peaceful and triumphant atmosphere, detailed anime background."
+    ]
+  ],
+  "images": {
+    "capa": "/historias/20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha/capa.png",
+    "parte_1": "/historias/20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha/parte_1.png",
+    "parte_2": "/historias/20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha/parte_2.png",
+    "parte_3": "/historias/20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha/parte_3.png",
+    "parte_4": "/historias/20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha/parte_4.png",
+    "parte_5": "/historias/20260123_165839_b6188aff_Naruto_O_Elo_de_Relâmpago_e_Rocha/parte_5.png"
+  },
+  "universe": {
+    "id": "naruto",
+    "name": "Naruto",
+    "style": "universo Naruto, ninjas, vilas ocultas, jutsus, chakra"
+  },
+  "characters": [
+    {
+      "id": "1769198184336",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1769197855213",
+      "name": "Amanda"
+    }
+  ],
+  "totalTime": 55.7
+}

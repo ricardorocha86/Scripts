@@ -15,11 +15,11 @@ export default function Header({ user, onLogin, onLogout, onGalleryClick }) {
 
                 <nav className="header-nav">
                     <button
-                        className="btn btn-secondary btn-icon gallery-btn"
+                        className="btn btn-secondary gallery-btn"
                         onClick={onGalleryClick}
-                        title="Galeria de Histórias"
+                        title="Minhas Histórias"
                     >
-                        🖼️
+                        📚 Histórias
                     </button>
 
                     {user ? (

@@ -1,0 +1,51 @@
+{
+  "id": "20260123_172659_7e3652ff",
+  "folder": "20260123_172659_7e3652ff_O_Legado_de_Cristal_Amanda_e_Ricardo_no_Reino_dos_",
+  "createdAt": "2026-01-23T17:29:12.157875",
+  "title": "O Legado de Cristal: Amanda e Ricardo no Reino dos Contos",
+  "cover_prompt": "A wide 16:9 cinematic shot of a glowing magical castle surrounded by Disney princesses like Cinderella and Belle, with Amanda and Ricardo standing at the center looking heroic, vibrant colors, magical sparkles, high fantasy style.",
+  "parts": [
+    [
+      "No coração do Reino Encantado, Amanda e Ricardo observavam o céu escurecer sobre o castelo da Cinderela. Uma névoa púrpura, vinda das profundezas da Floresta Proibida, ameaçava apagar a magia de todos os contos.",
+      "Wide cinematic shot of a dark purple mist engulfing a glowing fairy tale castle, Amanda and Ricardo looking worried in the foreground, Disney style magic."
+    ],
+    [
+      "Eles não estavam sozinhos. Mulan e Tiana surgiram das sombras, revelando que o Coração dos Contos havia sido fragmentado. Somente corações puros de outro mundo podem reuni-los, explicou Mulan, entregando a Amanda um medalhão de luz.",
+      "Mulan and Tiana standing with Amanda and Ricardo in a lush garden, Mulan holding a sword, Tiana in her green gown, glowing medallion, 8k resolution."
+    ],
+    [
+      "A jornada os levou pelos picos congelados de Arendelle. Elsa e Anna ajudaram Ricardo a enfrentar gigantes de gelo enquanto Amanda usava o medalhão para localizar o primeiro fragmento escondido em uma caverna de cristais.",
+      "Ricardo fighting ice giants with a glowing sword, Elsa and Anna casting ice magic, snowy mountain landscape, epic lighting."
+    ],
+    [
+      "No clímax da aventura, Ariel emergiu das águas e Merida disparou flechas de fogo contra as hordas de sombras. No portão do Castelo Sombrio, Amanda e Ricardo uniram forças para derrotar o espectro da Malévola que guardava o último pedaço.",
+      "Ariel and Merida in a fierce battle against shadow creatures, Amanda and Ricardo leading the charge, epic fantasy battle, vibrant colors."
+    ],
+    [
+      "Com o Coração dos Contos restaurado, a luz explodiu, dissipando as trevas. No grande salão, cercados por todas as princesas, Amanda e Ricardo foram coroados Protetores do Reino, garantindo que o felizes para sempre jamais terminasse.",
+      "A grand celebration in a golden palace hall, Amanda and Ricardo being crowned by Cinderella, all Disney princesses cheering, magical sparks, cinematic lighting."
+    ]
+  ],
+  "images": {
+    "parte_2": "/historias/20260123_172659_7e3652ff_O_Legado_de_Cristal_Amanda_e_Ricardo_no_Reino_dos_/parte_2.png",
+    "parte_1": "/historias/20260123_172659_7e3652ff_O_Legado_de_Cristal_Amanda_e_Ricardo_no_Reino_dos_/parte_1.png",
+    "parte_5": "/historias/20260123_172659_7e3652ff_O_Legado_de_Cristal_Amanda_e_Ricardo_no_Reino_dos_/parte_5.png",
+    "parte_4": "/historias/20260123_172659_7e3652ff_O_Legado_de_Cristal_Amanda_e_Ricardo_no_Reino_dos_/parte_4.png"
+  },
+  "universe": {
+    "id": "disney-princess",
+    "name": "Princesas Disney",
+    "style": "universo das princesas Disney, castelos encantados, magia"
+  },
+  "characters": [
+    {
+      "id": "1769199208155",
+      "name": "Amanda"
+    },
+    {
+      "id": "1769199221471",
+      "name": "Ricardo"
+    }
+  ],
+  "totalTime": 173.7
+}
