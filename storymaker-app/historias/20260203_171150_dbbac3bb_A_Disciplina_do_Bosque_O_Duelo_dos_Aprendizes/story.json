@@ -1,0 +1,61 @@
+{
+  "id": "20260203_171150_dbbac3bb",
+  "folder": "20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes",
+  "createdAt": "2026-02-03T17:12:32.662006",
+  "title": "A Disciplina do Bosque: O Duelo dos Aprendizes",
+  "cover_prompt": "Studio Ghibli style, wide 16:9, a breathtaking view of a magical forest with floating islands in the distance, four young boys with wooden swords standing on a grassy cliff, soft sunlight filtering through clouds, vibrant colors, cinematic lighting, watercolor textures.",
+  "parts": [
+    [
+      "No coracao do Bosque dos Suspiros, onde as folhas sussurram segredos antigos, Marcelo e Ricardo, os aprendizes mais dedicados da academia, observavam com profundo desapontamento. Luca e Atila, em vez de praticarem seus feitiços de cura, dormiam profundamente sob a sombra de um totem de pedra musgoso, ignorando completamente seus deveres magicos.",
+      "Studio Ghibli style, a lush magical forest with a giant mossy stone creature, two boys watching from afar while two others sleep under a tree, vibrant greens, soft sunlight, detailed foliage, peaceful atmosphere."
+    ],
+    [
+      "A paciencia do Mestre tem limites, e a nossa tambem, murmurou Ricardo, empunhando com firmeza uma espada de carvalho sagrado. Marcelo assentiu em silencio, sentindo a magia da floresta vibrar em sua propria lamina de madeira. Eles se aproximaram cautelosamente, enquanto pequenas criaturas de poeira saltitavam ao redor, prevendo a confusao que estava por vir.",
+      "Studio Ghibli style, two boys holding wooden swords walking through a field of tall grass, tiny soot sprites jumping around, beautiful watercolor background, blue sky with fluffy white clouds, hand-drawn aesthetic."
+    ],
+    [
+      "O despertar de Luca e Atila foi abrupto e doloroso. Antes que pudessem bocejar, o som seco da madeira encontrando as costas ecoou por todo o vale encantado. Marcelo e Ricardo moviam-se com a agilidade do vento, desferindo golpes precisos para despertar o espirito guerreiro que os dois alunos preguicosos insistiam em esconder.",
+      "Studio Ghibli style, action scene, two boys with wooden swords chasing two others in a forest clearing, flower petals flying in the air, expressive faces, dynamic movement, soft shading, nature elements."
+    ],
+    [
+      "Luca tentou conjurar um escudo de flores, mas as plantas apenas riram de sua falta de pratica, e Atila tropeçou em uma raiz magica que parecia conspirar com os veteranos. A disciplina de Marcelo e Ricardo era impecavel; cada golpe de madeira deixava um rastro de luz azulada, uma licao marcada tanto na pele quanto na alma dos piores alunos daquela geracao.",
+      "Studio Ghibli style, magical forest reacting, flowers with tiny faces, a boy tripping over a glowing tree root, wooden swords glowing with soft magical energy, detailed and whimsical background, ethereal lighting."
+    ],
+    [
+      "Quando o sol finalmente se pos em tons de laranja e violeta, a perseguicao cessou. Luca e Atila, ofegantes e cobertos de folhas, finalmente pegaram seus proprios cajados com uma seriedade nunca antes vista. Marcelo e Ricardo guardaram suas espadas, satisfeitos. No Bosque dos Suspiros, a licao foi dura, mas o jantar sob as estrelas prometia o inicio de uma verdadeira amizade.",
+      "Studio Ghibli style, sunset over rolling hills, four boys sitting together near a small campfire, wooden swords resting against a tree, warm glowing lanterns, peaceful and nostalgic atmosphere, starry sky."
+    ]
+  ],
+  "images": {
+    "parte_1": "/historias/20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes/parte_1.png",
+    "parte_4": "/historias/20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes/parte_4.png",
+    "parte_3": "/historias/20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes/parte_3.png",
+    "capa": "/historias/20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes/capa.png",
+    "parte_5": "/historias/20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes/parte_5.png",
+    "parte_2": "/historias/20260203_171150_dbbac3bb_A_Disciplina_do_Bosque_O_Duelo_dos_Aprendizes/parte_2.png"
+  },
+  "universe": {
+    "id": "studio-ghibli",
+    "name": "Studio Ghibli",
+    "style": "estilo Studio Ghibli, natureza, magia suave, criaturas encantadas"
+  },
+  "characters": [
+    {
+      "id": "1770148690169",
+      "name": "Marcelo"
+    },
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    }
+  ],
+  "totalTime": 60.5
+}

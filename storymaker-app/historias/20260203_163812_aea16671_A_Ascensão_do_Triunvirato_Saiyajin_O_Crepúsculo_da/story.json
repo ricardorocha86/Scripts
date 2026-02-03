@@ -1,0 +1,57 @@
+{
+  "id": "20260203_163812_aea16671",
+  "folder": "20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da",
+  "createdAt": "2026-02-03T16:38:54.665562",
+  "title": "A Ascensão do Triunvirato Saiyajin: O Crepúsculo da Terra",
+  "cover_prompt": "Three powerful Saiyans (Ricardo, Luca, and Atila) in battle armor standing on a cliff overlooking a futuristic city, golden and blue Ki auras exploding around them, cinematic 16:9 wide shot, Dragon Ball Z high-quality art style, epic atmosphere.",
+  "parts": [
+    [
+      "Três cápsulas espaciais cruzam o céu da Terra como meteoros de destruição, colidindo violentamente contra o solo. Das crateras fumegantes, surgem Ricardo, Luca e Atila, guerreiros Saiyajins de elite. O scouter de Ricardo apita freneticamente, detectando as fracas defesas do planeta enquanto eles sorriem com desdém para o horizonte.",
+      "Three Saiyan space pods landing in a smoking crater in a desert, Ricardo, Luca, and Atila stepping out, wearing classic Saiyan battle armor and scouters, epic smoke and dust effects, anime style."
+    ],
+    [
+      "Os defensores da Terra chegam para o confronto, mas Ricardo avança com uma velocidade que rompe a barreira do som. Com um único soco carregado de Ki azul, ele lança o primeiro herói através de montanhas distantes. 'A diversão começou', exclama Ricardo, enquanto sua aura esmagadora faz o próprio chão tremer sob seus pés.",
+      "Ricardo in a dynamic combat pose, fist glowing with blue energy, striking an invisible opponent, mountains shattering in the background, intense speed lines, Dragon Ball Z art style."
+    ],
+    [
+      "Luca assume a linha de frente, enfrentando os guerreiros remanescentes com uma técnica impecável. Seus golpes são precisos e brutais, cada movimento deixando rastros de energia dourada. Ele ignora as tentativas de contra-ataque, provando que a resistência humana é fútil diante da força bruta e da herança guerreira de um Saiyajin puro.",
+      "Luca surrounded by defeated warriors, charging a golden energy blast in his palm, intense expression, glowing eyes, debris floating around him, cinematic lighting."
+    ],
+    [
+      "No alto, Atila observa com frieza antes de erguer a mão direita. Ele condensa uma esfera de energia carmesim massiva que escurece o céu. Com um comando silencioso, ele dispara o ataque, criando uma explosão que aniquila as últimas defesas terrestres em um clarão ofuscante, transformando a esperança em cinzas.",
+      "Atila hovering high in the sky, holding a massive crimson energy sphere above his head, casting shadows over a city, dramatic lighting, high stakes, epic scale anime art."
+    ],
+    [
+      "A poeira baixa e o silêncio domina o planeta. Ricardo, Luca e Atila caminham vitoriosos sobre os escombros dos antigos heróis. Com a Terra subjugada e a paz destruída, os três guerreiros observam seu novo império. O triunfo é absoluto; os Saiyajins agora são os senhores supremos deste mundo, e ninguém restou para desafiá-los.",
+      "Ricardo, Luca, and Atila standing together in a triumphant pose on a pile of rubble, sunset background, capes flowing in the wind, powerful and menacing presence, hyper-detailed Dragon Ball aesthetic."
+    ]
+  ],
+  "images": {
+    "parte_5": "/historias/20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da/parte_5.png",
+    "parte_2": "/historias/20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da/parte_2.png",
+    "capa": "/historias/20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da/capa.png",
+    "parte_4": "/historias/20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da/parte_4.png",
+    "parte_1": "/historias/20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da/parte_1.png",
+    "parte_3": "/historias/20260203_163812_aea16671_A_Ascensão_do_Triunvirato_Saiyajin_O_Crepúsculo_da/parte_3.png"
+  },
+  "universe": {
+    "id": "dragon-ball",
+    "name": "Dragon Ball",
+    "style": "universo Dragon Ball, guerreiros Saiyajins, artes marciais, poderes ki"
+  },
+  "characters": [
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    }
+  ],
+  "totalTime": 66.3
+}

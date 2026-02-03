@@ -1,0 +1,57 @@
+{
+  "id": "20260203_163017_d26899d7",
+  "folder": "20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S",
+  "createdAt": "2026-02-03T16:31:01.864034",
+  "title": "A Jornada Heroica: Ricardo, Luca e Atila Contra a Sombra de Saruman",
+  "cover_prompt": "Cinematic wide 16:9, vibrant cartoon style, Ricardo, Luca, and Atila standing heroically in front of Orthanc tower, with Gandalf, Aragorn, Legolas, and Gimli, epic sky with orange and purple hues, high detail animation style.",
+  "parts": [
+    [
+      "Em um clarão mágico, Ricardo, Luca e Atila surgem no Condado, onde são recebidos por Gandalf, o Cinzento. O mago explica que Saruman está reunindo um exército sem precedentes para destruir a Terra Média, e apenas o trio possui a coragem necessária para mudar o destino de todos.",
+      "Cartoon style, Ricardo, Luca, and Atila standing in the green hills of the Shire, Gandalf leaning on his staff talking to them, colorful flowers and hobbit holes in the background, bright and cheerful lighting."
+    ],
+    [
+      "O trio viaja até Valfenda, onde se encontram com Aragorn, Legolas e Gimli. Ricardo recebe uma espada forjada pelos elfos, Luca recebe um arco místico e Atila ganha um escudo impenetrável. Juntos, eles formam a nova elite da Sociedade do Anel para marchar contra Isengard.",
+      "Cartoon style, Ricardo holding a glowing sword, Luca testing a bow, and Atila with a large shield, standing with Aragorn, Legolas, and Gimli in the elegant halls of Rivendell, autumn leaves falling."
+    ],
+    [
+      "Atravessando as montanhas sob tempestades enviadas por Saruman, o grupo é emboscado por uma horda de Uruk-hai. Luca e Legolas disparam flechas precisas das rochas, enquanto Ricardo e Aragorn lideram a carga frontal, protegidos pelo escudo de Atila contra as flechas negras dos orcs.",
+      "Action-packed cartoon scene, Luca and Legolas shooting arrows from a cliff, Ricardo and Aragorn charging through the snow, Atila blocking orc arrows with his shield, dynamic poses, high energy."
+    ],
+    [
+      "A batalha final acontece aos pés da torre de Orthanc. Enquanto Gandalf usa sua luz para cegar os inimigos, Atila e Gimli quebram as defesas do portão. Ricardo enfrenta o capitão dos orcs em um duelo épico, enquanto Luca neutraliza as máquinas de guerra de Saruman com sua agilidade.",
+      "Cartoon style epic battle, the dark tower of Isengard in the background, Atila and Gimli smashing gates, Ricardo dueling a giant Uruk-hai, Gandalf's white light exploding in the center of the fray."
+    ],
+    [
+      "Com a queda de Saruman, a paz retorna à Terra Média. No topo de Minas Tirith, Aragorn coroa Ricardo, Luca e Atila como os Defensores do Reino. Os três amigos olham para o horizonte, sabendo que sua lenda será cantada por gerações antes de voltarem para casa.",
+      "Cartoon style, a grand celebration in the white city of Minas Tirith, King Aragorn placing medals on Ricardo, Luca, and Atila, golden sunlight, white banners waving, Legolas and Gimli smiling in the background."
+    ]
+  ],
+  "images": {
+    "parte_1": "/historias/20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S/parte_1.png",
+    "parte_5": "/historias/20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S/parte_5.png",
+    "capa": "/historias/20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S/capa.png",
+    "parte_3": "/historias/20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S/parte_3.png",
+    "parte_2": "/historias/20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S/parte_2.png",
+    "parte_4": "/historias/20260203_163017_d26899d7_A_Jornada_Heroica_Ricardo,_Luca_e_Atila_Contra_a_S/parte_4.png"
+  },
+  "universe": {
+    "id": "lord-of-rings",
+    "name": "Senhor dos Anéis",
+    "style": "universo Senhor dos Anéis, Terra Média, elfos, hobbits, fantasia épica"
+  },
+  "characters": [
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    }
+  ],
+  "totalTime": 56.9
+}

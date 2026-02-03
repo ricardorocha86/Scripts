@@ -1,0 +1,61 @@
+{
+  "id": "20260203_170111_e694f904",
+  "folder": "20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo",
+  "createdAt": "2026-02-03T17:01:57.640951",
+  "title": "O Confronto das Probabilidades: Os Defensores da Folha contra o Intruso do Azar",
+  "cover_prompt": "Cinematic wide shot of the Hidden Leaf Village gate at sunset, three heroic ninjas in tactical gear facing a massive, tall, and imposing ninja surrounded by floating mathematical symbols and glowing dice, Naruto anime style, high detail, 16:9 aspect ratio.",
+  "parts": [
+    [
+      "O sol se punha sobre a Vila da Folha quando Marcelo, um ninja de estatura colossal e porte robusto, cruzou os portões com um sorriso desafiador. Ricardo, Luca e Atila, shinobis de elite conhecidos por sua coragem, prontamente se posicionaram para defender o lar. O ar pesava com a presença de um invasor que não carregava espadas, mas um estranho brilho nos olhos.",
+      "The tall and large ninja Marcelo standing at the entrance of the Hidden Leaf Village, Ricardo, Luca, and Atila in defensive stances in the foreground, Naruto anime style art."
+    ],
+    [
+      "Marcelo revelou seu jutsu proibido: o Estilo Probabilidade. Sem selos de mão, ele manipulava as chances de sucesso de qualquer ataque. Quando Luca tentou um golpe direto, o chão cedeu de forma improvável, fazendo-o errar. Atila lançou shurikens que, por um 'acaso' estatístico, foram desviadas por uma rajada de vento súbita. Marcelo ria, chamando a luta de um jogo de azar.",
+      "Marcelo surrounded by a glowing green aura of floating numbers and percentages, Luca and Atila looking surprised as their attacks fail due to bad luck, dynamic action shot."
+    ],
+    [
+      "O invasor usava truques sujos, calculando as trajetórias de chakra para que os heróis se chocassem entre si. Marcelo não era apenas forte; ele era uma calculadora humana que transformava a sorte em sua maior arma. Ricardo percebeu que, para vencer a probabilidade avançada, eles precisariam de algo que Marcelo não podia quantificar: o instinto puro e o sacrifício.",
+      "Marcelo laughing while manipulating glowing dice in the air, Ricardo dodging a friendly fire attack from Luca caused by the probability jutsu, chaotic battlefield."
+    ],
+    [
+      "Ricardo sinalizou para Luca e Atila, coordenando um ataque triplo em uma sincronia impossível. Eles ignoraram a lógica e atacaram de direções aleatórias, sobrecarregando a capacidade de Marcelo de prever as variáveis. O cálculo do vilão começou a falhar enquanto o chakra dos três defensores da Folha brilhava intensamente, quebrando o domínio matemático do invasor.",
+      "Ricardo, Luca, and Atila moving at high speed in a blur of motion, Marcelo looking panicked as his mathematical aura begins to shatter, intense energy effects."
+    ],
+    [
+      "Com um golpe final combinado, os três heróis romperam a última defesa de Marcelo. O ninja alto e gordo foi lançado para fora dos limites da vila, sua probabilidade de vitória reduzida a zero. A coragem de Ricardo, Luca e Atila provou que a força de vontade de um shinobi é a única coisa que nenhuma estatística pode prever. A paz retornou à Vila da Folha.",
+      "The final impact of a combined jutsu hitting Marcelo, a massive explosion of blue and gold chakra, Ricardo, Luca, and Atila standing victorious as the villain is defeated, cinematic sunset."
+    ]
+  ],
+  "images": {
+    "parte_2": "/historias/20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo/parte_2.png",
+    "parte_1": "/historias/20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo/parte_1.png",
+    "capa": "/historias/20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo/capa.png",
+    "parte_4": "/historias/20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo/parte_4.png",
+    "parte_5": "/historias/20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo/parte_5.png",
+    "parte_3": "/historias/20260203_170111_e694f904_O_Confronto_das_Probabilidades_Os_Defensores_da_Fo/parte_3.png"
+  },
+  "universe": {
+    "id": "naruto",
+    "name": "Naruto",
+    "style": "universo Naruto, ninjas, vilas ocultas, jutsus, chakra"
+  },
+  "characters": [
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    },
+    {
+      "id": "1770148690169",
+      "name": "Marcelo"
+    }
+  ],
+  "totalTime": 63.6
+}

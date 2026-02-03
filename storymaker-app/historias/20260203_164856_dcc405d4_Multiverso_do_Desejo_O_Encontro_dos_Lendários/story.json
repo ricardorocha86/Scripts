@@ -1,0 +1,57 @@
+{
+  "id": "20260203_164856_dcc405d4",
+  "folder": "20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários",
+  "createdAt": "2026-02-03T16:49:40.758470",
+  "title": "Multiverso do Desejo: O Encontro dos Lendários",
+  "cover_prompt": "Cinematic wide 16:9 shot, Ricardo as Superman, Atila as Batman, and Luca as Wolverine standing heroically in front of a futuristic skyscraper, dramatic lighting, hyper-realistic, Marvel cinematic style, 8k resolution.",
+  "parts": [
+    [
+      "Em um terraço luxuoso de Nova York, o destino uniu três lendas: Ricardo, com a força e o traje de Superman; Atila, envolto na armadura tecnológica do Batman; e Luca, cujas garras de adamantium do Wolverine brilhavam sob o luar. Diante deles, Diana (Mulher Maravilha), Selina (Mulher-Gato) e Harley Quinn observavam com um desdém fingido.",
+      "Ricardo as Superman, Atila as Batman, and Luca as Wolverine standing on a high-tech skyscraper balcony looking at Wonder Woman, Catwoman, and Harley Quinn, cinematic lighting, MCU style."
+    ],
+    [
+      "Ricardo tentou um galanteio com Diana, enquanto Atila mantinha seu olhar fixo em Selina e Luca soltava um rosnado charmoso para Harley. As mulheres apenas riram, agindo com uma indiferença calculada, fazendo o famoso 'cu doce' que desafiava até os heróis mais poderosos da Terra.",
+      "Superman Ricardo talking to Wonder Woman, Batman Atila near Catwoman, Wolverine Luca near Harley Quinn, the women look unimpressed and playful, luxury lounge setting, ultra-realistic."
+    ],
+    [
+      "A tensão foi quebrada por uma invasão de drones de elite. Ricardo voou em super-velocidade destruindo o metal no céu, Atila usou seus gadgets de precisão e Luca estraçalhou as máquinas com fúria selvagem. A demonstração de poder bruto e proteção deixou as heroínas finalmente hipnotizadas.",
+      "Action scene, Superman flying, Batman using high-tech gadgets, Wolverine slashing robots with adamantium claws, epic explosions, cinematic action shot, 8k."
+    ],
+    [
+      "O silêncio voltou, mas o clima mudou completamente. Diana tocou o ombro de Ricardo com admiração, Selina sorriu cúmplice para Atila e Harley pulou nas costas de Luca em meio a gargalhadas. A resistência inicial derreteu, dando lugar a uma conexão magnética entre os dois universos.",
+      "Wonder Woman smiling at Superman Ricardo, Catwoman hugging Batman Atila, Harley Quinn laughing with Wolverine Luca, romantic and powerful superhero vibe, sunset background."
+    ],
+    [
+      "Para celebrar, o grupo desceu até a garagem secreta onde três Porsches customizados os aguardavam. Com o ronco dos motores ecoando, Ricardo acelerou ao lado de Diana, seguidos por Atila com Selina e Luca com Harley, partindo em alta velocidade pelas luzes neon da metrópole em um role épico.",
+      "Three luxury Porsches driving fast through a futuristic city at night, Superman, Batman, and Wolverine driving with their DC partners in the passenger seats, neon lights, motion blur, epic finale."
+    ]
+  ],
+  "images": {
+    "parte_3": "/historias/20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários/parte_3.png",
+    "capa": "/historias/20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários/capa.png",
+    "parte_4": "/historias/20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários/parte_4.png",
+    "parte_5": "/historias/20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários/parte_5.png",
+    "parte_2": "/historias/20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários/parte_2.png",
+    "parte_1": "/historias/20260203_164856_dcc405d4_Multiverso_do_Desejo_O_Encontro_dos_Lendários/parte_1.png"
+  },
+  "universe": {
+    "id": "marvel",
+    "name": "Marvel",
+    "style": "universo cinematográfico Marvel, super-heróis, ação épica"
+  },
+  "characters": [
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    }
+  ],
+  "totalTime": 57.8
+}

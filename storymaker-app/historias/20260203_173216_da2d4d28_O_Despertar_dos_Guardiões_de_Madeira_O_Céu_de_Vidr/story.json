@@ -1,0 +1,61 @@
+{
+  "id": "20260203_173216_da2d4d28",
+  "folder": "20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr",
+  "createdAt": "2026-02-03T17:33:19.128115",
+  "title": "O Despertar dos Guardiões de Madeira: O Céu de Vidro",
+  "cover_prompt": "Studio Ghibli style, cinematic wide 16:9, four young heroes (Ricardo, Marcelo, Luca, Atila) standing on a lush green hill holding carved wooden swords, looking at a sky filled with iridescent floating crystalline alien spheres, vibrant colors, lush forest landscape, Hayao Miyazaki art style, masterpiece.",
+  "parts": [
+    [
+      "O sol banhava o vale de verdes profundos quando Ricardo e Marcelo avistaram as primeiras estrelas cadentes em pleno dia. Não eram meteoros, mas esferas translúcidas que desciam silenciosas como pétalas. Luca, o sonhador, sentiu a terra vibrar sob seus pés, um aviso sussurrado pelas raízes das árvores milenares que cercavam a vila.",
+      "Studio Ghibli style, a peaceful valley with lush rolling hills, giant camphor trees, small wooden houses, four boys looking at shimmering iridescent spheres falling from a bright blue sky, soft sunlight, highly detailed nature."
+    ],
+    [
+      "Quando as esferas tocaram o solo, criaturas de luz líquida emergiram, emitindo um zumbido que desintegrava qualquer metal por perto. Atila percebeu horrorizado que suas ferramentas de ferro viravam pó, mas os galhos de carvalho que carregavam para a fogueira permaneciam intactos. Havia uma magia antiga na madeira que os invasores não podiam tocar.",
+      "Studio Ghibli style, ethereal translucent alien creatures appearing in a forest clearing, metallic objects turning into glowing dust, boys holding wooden branches defensively, cinematic lighting, lush forest background."
+    ],
+    [
+      "Sob a orientação estratégica de Ricardo, o grupo correu até o antigo dojo da floresta, onde guardavam espadas de treino esculpidas em madeira de cerejeira sagrada. A força da floresta é nossa única defesa, gritou Marcelo, brandindo sua lâmina de madeira com uma coragem que inflamava o coração dos amigos enquanto as sombras alienígenas avançavam.",
+      "Studio Ghibli style, interior of a rustic wooden dojo, four boys picking up beautifully carved wooden swords, dust motes dancing in sunbeams, detailed wood grain, heroic and determined expressions."
+    ],
+    [
+      "A batalha decisiva aconteceu sob o Grande Salgueiro. Os alienígenas tentavam envolver os jovens em redes de energia, mas Luca e Atila moviam-se com a agilidade do vento, cortando as amarras estelares com golpes precisos de suas armas de madeira. Cada impacto liberava faíscas verdes e pétalas de luz, uma dança mística entre o orgânico e o estelar.",
+      "Studio Ghibli style, dynamic battle scene in a flowery meadow at dusk, boys fighting glowing alien entities with wooden swords, visual effects of green sparks and flower petals, vibrant and intense animation style."
+    ],
+    [
+      "Incapazes de vencer a resiliência da natureza, as criaturas recuaram para as nuvens, deixando apenas um rastro de pó prateado que fertilizou a terra. Ricardo, Marcelo, Luca e Atila guardaram suas armas, sabendo que a floresta os havia escolhido. O silêncio voltou ao vale, agora preenchido pelo canto dos pássaros e pelo sussurro das folhas em gratidão.",
+      "Studio Ghibli style, four heroes standing together at sunset, looking at a silver trail in the sky, wooden swords resting against a giant ancient tree, golden hour lighting, peaceful and triumphant atmosphere, cinematic finish."
+    ]
+  ],
+  "images": {
+    "capa": "/historias/20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr/capa.png",
+    "parte_2": "/historias/20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr/parte_2.png",
+    "parte_1": "/historias/20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr/parte_1.png",
+    "parte_5": "/historias/20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr/parte_5.png",
+    "parte_4": "/historias/20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr/parte_4.png",
+    "parte_3": "/historias/20260203_173216_da2d4d28_O_Despertar_dos_Guardiões_de_Madeira_O_Céu_de_Vidr/parte_3.png"
+  },
+  "universe": {
+    "id": "studio-ghibli",
+    "name": "Studio Ghibli",
+    "style": "estilo Studio Ghibli, natureza, magia suave, criaturas encantadas"
+  },
+  "characters": [
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770148690169",
+      "name": "Marcelo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    }
+  ],
+  "totalTime": 78.6
+}

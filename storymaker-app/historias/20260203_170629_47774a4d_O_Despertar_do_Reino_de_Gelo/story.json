@@ -1,0 +1,61 @@
+{
+  "id": "20260203_170629_47774a4d",
+  "folder": "20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo",
+  "createdAt": "2026-02-03T17:08:53.465830",
+  "title": "O Despertar do Reino de Gelo",
+  "cover_prompt": "A cinematic wide 16:9 shot showing Marcelo on an icy cliff with Ricardo, Atila, and Luca at his side, the kingdom of Arendelle visible in the background under a magical aurora borealis, Disney-style high-quality animation, epic lighting.",
+  "parts": [
+    [
+      "No dia de sua coroação como Rei de Arendelle, Marcelo perde o controle de seus poderes ocultos de gelo durante uma discussão. Em um instante, o verão se transforma em um inverno rigoroso e eterno. Assustado com sua própria força, Marcelo foge para as Montanhas do Norte, deixando o reino em um congelamento profundo.",
+      "Marcelo wearing a royal blue cape and crown, accidentally casting a wave of frost from his hands in a grand ballroom, guests looking shocked, 3D Disney-style animation."
+    ],
+    [
+      "Ricardo, o irmão de espírito aventureiro, decide que não pode abandonar Marcelo. Ele parte em uma jornada perigosa pela neve para trazer o irmão de volta. No caminho, ele encontra Atila, um bravo montanhista que vive nos picos gelados com sua rena de estimação, e juntos formam uma aliança para enfrentar a tempestade.",
+      "Ricardo in thick winter gear talking to Atila next to a mountain sled, snow falling heavily, pine trees in the background, cinematic lighting, high-quality animation."
+    ],
+    [
+      "Enquanto atravessam a floresta branca, o grupo é surpreendido por Luca, um pequeno boneco de neve encantado que ganhou vida através da magia subconsciente de Marcelo. Luca, com seu humor contagiante e otimismo, torna-se o guia essencial para encontrar o caminho até o palácio escondido nas nuvens de gelo.",
+      "Luca the magical snowman with a funny expression leading Ricardo and Atila through a glowing frozen forest, magical atmosphere, bright blue ice crystals everywhere."
+    ],
+    [
+      "Eles chegam ao magnífico Palácio de Gelo, onde Marcelo construiu um isolamento frio. O reencontro é tenso e Ricardo implora para que o irmão desfaça o inverno. Tomado pelo medo e pela dor, Marcelo perde o controle novamente, atingindo acidentalmente o coração de Ricardo com um raio de gelo puro antes de expulsá-los.",
+      "Marcelo in a shimmering ice suit inside a massive translucent ice palace, looking distressed as ice magic swirls around him while Ricardo reaches out to him, dramatic shadows."
+    ],
+    [
+      "Quando tudo parece perdido, um ato de sacrifício e amor fraternal entre os quatro amigos quebra o feitiço de gelo. Marcelo percebe que o amor é a chave para controlar seus poderes. Ele descongela Arendelle, e os quatro agora governam e protegem o reino, onde o gelo e o sol coexistem em harmonia.",
+      "Arendelle thawing with green grass appearing through the snow, Marcelo, Ricardo, Atila, and Luca standing together smiling under a bright sun and a rainbow, vibrant colors, epic finale."
+    ]
+  ],
+  "images": {
+    "parte_4": "/historias/20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo/parte_4.png",
+    "parte_3": "/historias/20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo/parte_3.png",
+    "parte_5": "/historias/20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo/parte_5.png",
+    "parte_2": "/historias/20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo/parte_2.png",
+    "parte_1": "/historias/20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo/parte_1.png",
+    "capa": "/historias/20260203_170629_47774a4d_O_Despertar_do_Reino_de_Gelo/capa.png"
+  },
+  "universe": {
+    "id": "frozen",
+    "name": "Frozen",
+    "style": "universo Frozen, Arendelle, poderes de gelo, neve mágica"
+  },
+  "characters": [
+    {
+      "id": "1770146225323",
+      "name": "Ricardo"
+    },
+    {
+      "id": "1770146238695",
+      "name": "Luca"
+    },
+    {
+      "id": "1770146250367",
+      "name": "Atila"
+    },
+    {
+      "id": "1770148690169",
+      "name": "Marcelo"
+    }
+  ],
+  "totalTime": 161.2
+}
